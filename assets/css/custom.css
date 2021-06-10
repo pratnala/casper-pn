@@ -60,8 +60,3 @@
         url('../webfonts/DubaiW23-Bold.ttf') format('truetype');
     /* Safari, Android, iOS */
 }
-
-:root{
-    /* Fonts */
-    --font-sans-serif: "Dubai"
-}
