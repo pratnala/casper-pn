@@ -10,3 +10,4 @@ Listed below are the changes from the original Casper theme. Changes are made in
 
 1. Changed body font to [Dubai](https://dubaifont.com/).
 2. Post content is justified.
+3. Automatic dark mode
