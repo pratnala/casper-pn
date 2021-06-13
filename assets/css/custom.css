@@ -158,12 +158,11 @@ samp {
 }
 
 .color-mode-btn {
-    display: flex;
-
     margin-right: 5px;
 
     cursor: pointer;
 
+    opacity: 0.8;
     color: #111;
     border: none;
     background: none;
@@ -171,7 +170,7 @@ samp {
 
 .color-mode-btn svg {
     fill: none;
-    stroke: #222;
+    stroke: #fff;
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 1.5px;
