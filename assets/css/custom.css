@@ -142,7 +142,10 @@ body {
     font-family: var(--font-sans-serif);
 }
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
     font-family: var(--font-mono);
 }
 
