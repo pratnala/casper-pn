@@ -10,7 +10,7 @@ Listed below are the changes from the original Casper theme. Changes are made in
 
 1. Changed default sans serif font to [Dubai](https://dubaifont.com/).
 2. Post content is justified.
-3. Automatic dark mode. Toggle with cookie to come soon.
+3. Automatic dark mode. Additional toggle for user to override. No cookie for user privacy. This can change based on feedback.
 4. Default monospaced font set to [Cascadia Code](https://github.com/microsoft/cascadia-code). Using v2105.24.
 5. Post body uses sans serif font.
 

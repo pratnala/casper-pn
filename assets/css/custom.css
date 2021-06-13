@@ -146,6 +146,10 @@ code, kbd, pre, samp {
     font-family: var(--font-mono);
 }
 
+.dark-mode-toggle {
+    margin-right: 5px;
+}
+
 .gh-content {
     text-align: justify;
 }
