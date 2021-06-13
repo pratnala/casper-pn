@@ -138,6 +138,14 @@
     --font-mono: 'Cascadia Code';
 }
 
+:root[color-mode="light"] .light--hidden {
+    display: none;
+}
+
+:root[color-mode="dark"] .dark-hidden {
+    display: none;
+}
+
 body {
     font-family: var(--font-sans-serif);
 }
@@ -149,7 +157,7 @@ samp {
     font-family: var(--font-mono);
 }
 
-.dark-mode-toggle {
+.color-mode-btn {
     margin-right: 5px;
 }
 
