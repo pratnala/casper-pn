@@ -142,7 +142,7 @@
     display: none;
 }
 
-:root[color-mode="dark"] .dark-hidden {
+:root[color-mode="dark"] .dark--hidden {
     display: none;
 }
 
