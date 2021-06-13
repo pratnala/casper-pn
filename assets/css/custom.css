@@ -176,6 +176,14 @@ samp {
     stroke-width: 1.5px;
 }
 
+.color-mode-btn:hover svg,
+.color-mode-btn:focus svg,
+.color-mode-btn focus {
+    outline: none;
+
+    fill: #fff;
+}
+
 .gh-content {
     text-align: justify;
 }
