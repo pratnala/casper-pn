@@ -214,6 +214,10 @@ html.dark-mode .article-tag {
     color: rgba(255, 255, 255, 0.9);
 }
 
+html.dark-mode .article-tag a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
 /* Cookie Consent */
 
 .cc-window {
