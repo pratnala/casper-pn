@@ -14,7 +14,7 @@ into the {body} tag of the default.hbs template --}}
         {{#if tags}}
         <section class="article-tag">
             {{#foreach tags}}
-                <a href="{{url}}">{{name}}</a>{{#unless @last}},&nbsp;{{/unless}}
+            <a href="{{url}}">{{name}}</a>{{#unless @last}},&nbsp;{{/unless}}
             {{/foreach}}
         </section>
         {{/if}}
@@ -71,9 +71,17 @@ into the {body} tag of the default.hbs template --}}
         {{content}}
     </section>
 
+    <hr>
+
+    <section class="gh-content gh-canvas">
+        <h2>Like what you read?</h2>
+    </section>
 
     <section class="article-comments gh-canvas">
         <script defer src="https://cdn.commento.io/js/commento.js" data-css-override="{{asset "built/custom.css"}}"></script>
+        <script>
+            $("#commento-textarea-root").attr('placeholder', 'Leave a comment');
+        </script>
         <div id="commento"></div>
     </section>
 

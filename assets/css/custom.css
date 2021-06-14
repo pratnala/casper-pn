@@ -198,6 +198,16 @@ samp {
     fill: #fff;
 }
 
+/* hr styling */
+
+hr {
+    border: 1px solid #191919;
+}
+
+html.dark-mode hr {
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
 /* Justify post content and use sans serif font */
 
 .gh-content {
