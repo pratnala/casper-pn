@@ -11,9 +11,11 @@ into the {body} tag of the default.hbs template --}}
 
     <header class="article-header gh-canvas">
 
-        {{#if primary_tag}}
+        {{#if tags}}
         <section class="article-tag">
-            <a href="{{primary_tag.url}}">{{primary_tag.name}}</a>
+            {{#foreach tags}}
+                <a href="{{url}}">{{name}}</a>{{#unless @last}}, {{/unless}}
+            {{/foreach}}
         </section>
         {{/if}}
 
