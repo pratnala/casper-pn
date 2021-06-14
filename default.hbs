@@ -113,6 +113,23 @@
                 $(".gh-content").fitVids();
             });
         </script>
+        <script>
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#191919"
+                    },
+                    "button": {
+                        "background": "#ababab"
+                    }
+                },
+                "position": "bottom-left",
+                "content": {
+                    "link": "Read our privacy policy",
+                    "href": "https://blog.pratyushnalam.com/privacy/"
+                }
+            });
+        </script>
         {{!-- Ghost outputs required functional scripts with this tag - it should always be the last thing before the
         closing body tag --}}
         {{ghost_foot}}
