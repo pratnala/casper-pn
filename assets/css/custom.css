@@ -232,6 +232,34 @@ html.dark-mode .commento-root * {
     color: rgba(255, 255, 255, 0.9);
 }
 
+html.dark-mode .commento-root .commento-anonymous-checkbox-container input[type=checkbox] + label {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+html.dark-mode .commento-root .commento-card .commento-name {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+html.dark-mode .commento-root .commento-footer .commento-logo-container .commento-logo-text {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+html.dark-mode .commento-root .commento-logged-container .commento-logged-in-as .commento-name {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+html.dark-mode .commento-root .commento-logged-container .commento-profile-button {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+html.dark-mode .commento-root .commento-login .commento-login-text {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+html.dark-mode .commento-root .commento-sort-policy-buttons-container .commento-sort-policy-buttons .commento-sort-policy-button {
+    color: rgba(255, 255, 255, 0.9);
+}
+
 /* Cookie Consent */
 
 .cc-window {
