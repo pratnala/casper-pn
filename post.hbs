@@ -14,7 +14,7 @@ into the {body} tag of the default.hbs template --}}
         {{#if tags}}
         <section class="article-tag">
             {{#foreach tags}}
-                <a href="{{url}}">{{name}}</a>{{#unless @last}}, {{/unless}}
+                <a href="{{url}}">{{name}}</a>{{#unless @last}},&nbsp;{{/unless}}
             {{/foreach}}
         </section>
         {{/if}}
