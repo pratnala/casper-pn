@@ -222,6 +222,16 @@ html.dark-mode .post-card-primary-tag {
     color: rgba(255, 255, 255, 0.9);
 }
 
+/* Commento overrides */
+
+.commento-root-font * {
+    font-family: var(--font-sans-serif);
+}
+
+html.dark-mode .commento-root * {
+    color: rgba(255, 255, 255, 0.9);
+}
+
 /* Cookie Consent */
 
 .cc-window {
