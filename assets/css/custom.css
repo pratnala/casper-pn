@@ -241,16 +241,15 @@ html.dark-mode hr {
 
 /* Update dark mode styling for missing elements */
 
-html.dark-mode .article-tag {
+html.dark-mode .article-tag,
+html.dark-mode .post-card-primary-tag,
+.error-code {
     color: rgba(255, 255, 255, 0.9);
 }
 
+html.dark-mode a,
 html.dark-mode .article-tag a {
     color: rgba(255, 255, 255, 0.75);
-}
-
-html.dark-mode .post-card-primary-tag {
-    color: rgba(255, 255, 255, 0.9);
 }
 
 /* Commento overrides */
