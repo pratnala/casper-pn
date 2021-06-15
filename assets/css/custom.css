@@ -247,7 +247,7 @@ html.dark-mode .error-code {
     color: rgba(255, 255, 255, 0.9);
 }
 
-html.dark-mode a,
+html.dark-mode a.error-link,
 html.dark-mode .article-tag a {
     color: rgba(255, 255, 255, 0.75);
 }
