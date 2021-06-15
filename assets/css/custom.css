@@ -214,12 +214,15 @@ html.dark-mode hr {
     text-align: justify;
 }
 
-.gh-content > blockquote,
 .gh-content > ol,
 .gh-content > ul,
 .gh-content > dl,
 .gh-content > p {
     font-family: var(--font-sans-serif);
+}
+
+.gh-content > blockquote {
+    font-family: var(--font-mono);
 }
 
 /* Update dark mode styling for missing elements */
