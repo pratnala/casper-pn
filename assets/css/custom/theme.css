@@ -238,9 +238,11 @@ html.dark-mode hr {
     font-size: 1.8rem;
     font-style: normal;
 
-    display: inherit;
-
     margin-top: 3vmin !important;
+}
+
+.gh-content > blockquote.small::before {
+    display: inherit;
 }
 
 /* Update dark mode styling for missing elements */
