@@ -144,6 +144,7 @@ Font extensions:
 :root {
     --font-sans-serif: 'Dubai';
     --font-mono: 'Cascadia Code';
+    --ghost-accent-color-dark-mode: rgba(255, 255, 255, 0.9);
 }
 
 /* Dark mode toggle */
@@ -201,11 +202,11 @@ samp {
 /* hr styling */
 
 hr {
-    border: 1px solid #191919;
+    border: 1px solid var(--ghost-accent-color);
 }
 
 html.dark-mode hr {
-    border: 1px solid rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--ghost-accent-color-dark-mode);
 }
 
 /* Justify post content and use sans serif font */
@@ -244,7 +245,7 @@ html.dark-mode hr {
 html.dark-mode .article-tag,
 html.dark-mode .post-card-primary-tag,
 html.dark-mode .error-code {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--ghost-accent-color-dark-mode);
 }
 
 html.dark-mode a.error-link,
@@ -258,36 +259,18 @@ html.dark-mode .article-tag a {
     font-family: var(--font-sans-serif);
 }
 
-html.dark-mode .commento-root * {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-html.dark-mode .commento-root .commento-anonymous-checkbox-container input[type=checkbox] + label {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-html.dark-mode .commento-root .commento-card .commento-name {
+html.dark-mode .commento-root *,
+html.dark-mode .commento-root .commento-anonymous-checkbox-container input[type=checkbox] + label,
+html.dark-mode .commento-root .commento-card .commento-name,
+html.dark-mode .commento-root .commento-logged-container .commento-logged-in-as .commento-name,
+html.dark-mode .commento-root .commento-logged-container .commento-profile-button,
+html.dark-mode .commento-root .commento-login .commento-login-text,
+html.dark-mode .commento-root .commento-sort-policy-buttons-container .commento-sort-policy-buttons .commento-sort-policy-button {
     color: rgba(255, 255, 255, 0.9);
 }
 
 html.dark-mode .commento-root .commento-footer .commento-logo-container .commento-logo-text {
     color: rgba(255, 255, 255, 0.7);
-}
-
-html.dark-mode .commento-root .commento-logged-container .commento-logged-in-as .commento-name {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-html.dark-mode .commento-root .commento-logged-container .commento-profile-button {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-html.dark-mode .commento-root .commento-login .commento-login-text {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-html.dark-mode .commento-root .commento-sort-policy-buttons-container .commento-sort-policy-buttons .commento-sort-policy-button {
-    color: rgba(255, 255, 255, 0.9);
 }
 
 /* Cookie Consent */
