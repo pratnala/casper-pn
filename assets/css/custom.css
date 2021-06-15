@@ -243,7 +243,7 @@ html.dark-mode hr {
 
 html.dark-mode .article-tag,
 html.dark-mode .post-card-primary-tag,
-.error-code {
+html.dark-mode .error-code {
     color: rgba(255, 255, 255, 0.9);
 }
 
