@@ -221,8 +221,20 @@ html.dark-mode hr {
     font-family: var(--font-sans-serif);
 }
 
+/* Blockquote and small blockquote styling */
+
 .gh-content > blockquote {
     font-family: var(--font-mono);
+
+    padding-left: 20px;
+}
+
+.gh-content > blockquote.small {
+    font-size: 1.8rem;
+    font-style: normal;
+
+    margin: 3vmin !important;
+    padding: 0;
 }
 
 /* Update dark mode styling for missing elements */
