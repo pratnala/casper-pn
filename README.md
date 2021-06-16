@@ -13,7 +13,7 @@ Listed below are the changes from the original Casper theme. Changes are made in
 3. Post content is justified.
 4. Automatic dark mode. Additional toggle for user to override and store user preference in a cookie.
 5. Added dark mode friendly styling for article tags in post contents and post cards (used on home page, author pages, and tag pages), 404 page, and horizontal lines (`<hr>` tags).
-6. Top header is sticky.
+6. Top header is sticky everywhere except home page.
 7. All tags are shown in post contents and post cards instead of just the primary tag.
 8. Blockquotes use monospaced font to be more artistically bold.
 9. New class defined for blockquotes when you want to use a smaller blockquote.

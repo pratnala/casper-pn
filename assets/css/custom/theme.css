@@ -13,62 +13,62 @@ Font extensions:
 @font-face {
     font-family: 'Dubai';
 
-    src: url('../fonts/DubaiW23-Regular.woff2') format('woff2'),
-    url('../fonts/DubaiW23-Regular.woff') format('woff'),
-    url('../fonts/DubaiW23-Regular.ttf') format('truetype');
+    src: url('../../fonts/DubaiW23-Regular.woff2') format('woff2'),
+    url('../../fonts/DubaiW23-Regular.woff') format('woff'),
+    url('../../fonts/DubaiW23-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Dubai';
     font-weight: 300;
 
-    src: url('../fonts/DubaiW23-Light.woff2') format('woff2'),
-    url('../fonts/DubaiW23-Light.woff') format('woff'),
-    url('../fonts/DubaiW23-Light.ttf') format('truetype');
+    src: url('../../fonts/DubaiW23-Light.woff2') format('woff2'),
+    url('../../fonts/DubaiW23-Light.woff') format('woff'),
+    url('../../fonts/DubaiW23-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Dubai';
     font-weight: 500;
 
-    src: url('../fonts/DubaiW23-Medium.woff2') format('woff2'),
-    url('../fonts/DubaiW23-Medium.woff') format('woff'),
-    url('../fonts/DubaiW23-Medium.ttf') format('truetype');
+    src: url('../../fonts/DubaiW23-Medium.woff2') format('woff2'),
+    url('../../fonts/DubaiW23-Medium.woff') format('woff'),
+    url('../../fonts/DubaiW23-Medium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Dubai';
     font-weight: bold;
 
-    src: url('../fonts/DubaiW23-Bold.woff2') format('woff2'),
-    url('../fonts/DubaiW23-Bold.woff') format('woff'),
-    url('../fonts/DubaiW23-Bold.ttf') format('truetype');
+    src: url('../../fonts/DubaiW23-Bold.woff2') format('woff2'),
+    url('../../fonts/DubaiW23-Bold.woff') format('woff'),
+    url('../../fonts/DubaiW23-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Cascadia Code';
     font-weight: 200;
 
-    src: url('../fonts/cascadiacode-extralight.woff2') format('woff2'),
-    url('../fonts/cascadiacode-extralight.woff') format('woff'),
-    url('../fonts/cascadiacode-extralight.ttf') format('truetype');
+    src: url('../../fonts/cascadiacode-extralight.woff2') format('woff2'),
+    url('../../fonts/cascadiacode-extralight.woff') format('woff'),
+    url('../../fonts/cascadiacode-extralight.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Cascadia Code';
     font-weight: 300;
 
-    src: url('../fonts/cascadiacode-light.woff2') format('woff2'),
-    url('../fonts/cascadiacode-light.woff') format('woff'),
-    url('../fonts/cascadiacode-light.ttf') format('truetype');
+    src: url('../../fonts/cascadiacode-light.woff2') format('woff2'),
+    url('../../fonts/cascadiacode-light.woff') format('woff'),
+    url('../../fonts/cascadiacode-light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Cascadia Code';
 
-    src: url('../fonts/cascadiacode-regular.woff2') format('woff2'),
-    url('../fonts/cascadiacode-regular.woff') format('woff'),
-    url('../fonts/cascadiacode-regular.ttf') format('truetype');
+    src: url('../../fonts/cascadiacode-regular.woff2') format('woff2'),
+    url('../../fonts/cascadiacode-regular.woff') format('woff'),
+    url('../../fonts/cascadiacode-regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -76,18 +76,18 @@ Font extensions:
     font-weight: 600;
     font-style: normal;
 
-    src: url('../fonts/cascadiacode-semibold.woff2') format('woff2'),
-    url('../fonts/cascadiacode-semibold.woff') format('woff'),
-    url('../fonts/cascadiacode-semibold.ttf') format('truetype');
+    src: url('../../fonts/cascadiacode-semibold.woff2') format('woff2'),
+    url('../../fonts/cascadiacode-semibold.woff') format('woff'),
+    url('../../fonts/cascadiacode-semibold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Cascadia Code';
     font-weight: bold;
 
-    src: url('../fonts/cascadiacode-bold.woff2') format('woff2'),
-    url('../fonts/cascadiacode-bold.woff') format('woff'),
-    url('../fonts/cascadiacode-bold.ttf') format('truetype');
+    src: url('../../fonts/cascadiacode-bold.woff2') format('woff2'),
+    url('../../fonts/cascadiacode-bold.woff') format('woff'),
+    url('../../fonts/cascadiacode-bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -95,9 +95,9 @@ Font extensions:
     font-weight: 200;
     font-style: italic;
 
-    src: url('../fonts/cascadiacodeitalic-extralightitalic.woff2') format('woff2'),
-    url('../fonts/cascadiacodeitalic-extralightitalic.woff') format('woff'),
-    url('../fonts/cascadiacodeitalic-extralightitalic.ttf') format('truetype');
+    src: url('../../fonts/cascadiacodeitalic-extralightitalic.woff2') format('woff2'),
+    url('../../fonts/cascadiacodeitalic-extralightitalic.woff') format('woff'),
+    url('../../fonts/cascadiacodeitalic-extralightitalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -105,18 +105,18 @@ Font extensions:
     font-weight: 300;
     font-style: italic;
 
-    src: url('../fonts/cascadiacodeitalic-lightitalic.woff2') format('woff2'),
-    url('../fonts/cascadiacodeitalic-lightitalic.woff') format('woff'),
-    url('../fonts/cascadiacodeitalic-lightitalic.ttf') format('truetype');
+    src: url('../../fonts/cascadiacodeitalic-lightitalic.woff2') format('woff2'),
+    url('../../fonts/cascadiacodeitalic-lightitalic.woff') format('woff'),
+    url('../../fonts/cascadiacodeitalic-lightitalic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Cascadia Code';
     font-style: italic;
 
-    src: url('../fonts/cascadiacodeitalic-italic.woff2') format('woff2'),
-    url('../fonts/cascadiacodeitalic-italic.woff') format('woff'),
-    url('../fonts/cascadiacodeitalic-italic.ttf') format('truetype');
+    src: url('../../fonts/cascadiacodeitalic-italic.woff2') format('woff2'),
+    url('../../fonts/cascadiacodeitalic-italic.woff') format('woff'),
+    url('../../fonts/cascadiacodeitalic-italic.ttf') format('truetype');
 }
 
 @font-face {
@@ -124,9 +124,9 @@ Font extensions:
     font-weight: 600;
     font-style: italic;
 
-    src: url('../fonts/cascadiacodeitalic-semibolditalic.woff2') format('woff2'),
-    url('../fonts/cascadiacodeitalic-semibolditalic.woff') format('woff'),
-    url('../fonts/cascadiacodeitalic-semibolditalic.ttf') format('truetype');
+    src: url('../../fonts/cascadiacodeitalic-semibolditalic.woff2') format('woff2'),
+    url('../../fonts/cascadiacodeitalic-semibolditalic.woff') format('woff'),
+    url('../../fonts/cascadiacodeitalic-semibolditalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -134,9 +134,9 @@ Font extensions:
     font-weight: bold;
     font-style: italic;
 
-    src: url('../fonts/cascadiacodeitalic-bolditalic.woff2') format('woff2'),
-    url('../fonts/cascadiacodeitalic-bolditalic.woff') format('woff'),
-    url('../fonts/cascadiacodeitalic-bolditalic.ttf') format('truetype');
+    src: url('../../fonts/cascadiacodeitalic-bolditalic.woff2') format('woff2'),
+    url('../../fonts/cascadiacodeitalic-bolditalic.woff') format('woff'),
+    url('../../fonts/cascadiacodeitalic-bolditalic.ttf') format('truetype');
 }
 
 /* Root variables */
