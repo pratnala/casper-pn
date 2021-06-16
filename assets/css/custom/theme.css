@@ -211,6 +211,14 @@ html.dark-mode hr {
     border: 1px solid var(--ghost-accent-color-dark-mode);
 }
 
+/* Make top header sticky */
+
+.gh-head {
+    position: -webkit-sticky;
+    position: sticky; /* Check support on https://caniuse.com/?search=sticky. Supported for 95.34% of users */
+    top: 0;
+}
+
 /* Justify post content and use sans serif font */
 
 .gh-content {
