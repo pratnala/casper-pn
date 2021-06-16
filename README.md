@@ -13,12 +13,13 @@ Listed below are the changes from the original Casper theme. Changes are made in
 3. Post content is justified.
 4. Automatic dark mode. Additional toggle for user to override and store user preference in a cookie.
 5. Added dark mode friendly styling for article tags in post contents and post cards (used on home page, author pages, and tag pages), 404 page, and horizontal lines (`<hr>` tags).
-6. All tags are shown in post contents and post cards instead of just the primary tag.
-7. Blockquotes use monospaced font to be more artistically bold.
-8. New class defined for blockquotes when you want to use a smaller blockquote.
-9. Using [Commento](https://commento.io/) for comments.
-10. Post body uses sans serif font.
-11. Added a cookie consent pop up.
+6. Top header is sticky.
+7. All tags are shown in post contents and post cards instead of just the primary tag.
+8. Blockquotes use monospaced font to be more artistically bold.
+9. New class defined for blockquotes when you want to use a smaller blockquote.
+10. Using [Commento](https://commento.io/) for comments.
+11. Post body uses sans serif font.
+12. Added a cookie consent pop up.
 
 ## How to use this theme in your Ghost-powered website
 

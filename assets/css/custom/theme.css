@@ -215,7 +215,8 @@ html.dark-mode hr {
 
 .gh-head {
     position: -webkit-sticky;
-    position: sticky; /* Check support on https://caniuse.com/?search=sticky. Supported for 95.34% of users */
+    position:         sticky; /* Check support on https://caniuse.com/?search=sticky. Supported for 95.34% of users */
+    z-index: 4000; /* Prevents content from scrolling on top of header */
     top: 0;
 }
 
