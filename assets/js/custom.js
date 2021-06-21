@@ -6,15 +6,36 @@
         document.documentElement.setAttribute('color-mode', 'dark');
         document.documentElement.classList.add('dark-mode');
         localStorage.setItem('theme', 'dark');
+        palette = {
+            accent: "#ffffff",
+            accentText: "#000000",
+            footerHeader: "#1b1818",
+            footerHeaderText: "#cac7c7",
+            box: "#232121",
+            boxText: "#ffffff",
+            boxLightText: "#aaaaaa",
+            backgroundText: "#ffffff"
+        };
     }
 
     var theme = localStorage.getItem('theme');
     if (theme === 'dark') {
         document.documentElement.setAttribute('color-mode', 'dark');
         document.documentElement.classList.add('dark-mode');
+        palette = {
+            accent: "#ffffff",
+            accentText: "#000000",
+            footerHeader: "#1b1818",
+            footerHeaderText: "#cac7c7",
+            box: "#232121",
+            boxText: "#ffffff",
+            boxLightText: "#aaaaaa",
+            backgroundText: "#ffffff"
+        };
     } else {
         document.documentElement.setAttribute('color-mode', 'light');
         document.documentElement.classList.remove('dark-mode');
+        palette = {};
     }
 })();
 
