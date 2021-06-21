@@ -36,11 +36,11 @@ var lightPalette = {
     if (theme === 'dark') {
         document.documentElement.setAttribute('color-mode', 'dark');
         document.documentElement.classList.add('dark-mode');
-        hyvor_talk.setPalette(darkPalette);
+        window.hyvor_talk.setPalette(darkPalette);
     } else {
         document.documentElement.setAttribute('color-mode', 'light');
         document.documentElement.classList.remove('dark-mode');
-        hyvor_talk.setPalette(lightPalette);
+        window.hyvor_talk.setPalette(lightPalette);
     }
 })();
 
@@ -49,12 +49,12 @@ var toggleColorMode = function toggleColorMode(e) {
         document.documentElement.setAttribute('color-mode', 'light');
         document.documentElement.classList.remove('dark-mode');
         localStorage.setItem('theme', 'light');
-        hyvor_talk.setPalette(lightPalette);
+        window.hyvor_talk.setPalette(lightPalette);
     } else {
         document.documentElement.setAttribute('color-mode', 'dark');
         document.documentElement.classList.add('dark-mode');
         localStorage.setItem('theme', 'dark');
-        hyvor_talk.setPalette(darkPalette);
+        window.hyvor_talk.setPalette(darkPalette);
     }
 };
 
