@@ -3,11 +3,15 @@
     if (theme === 'dark') {
         document.documentElement.setAttribute('color-mode', 'dark');
         document.documentElement.classList.add('dark-mode');
-        window.hyvor_talk.setPalette(darkPalette);
+        if (window.hyvor_talk) {
+            window.hyvor_talk.setPalette(darkPalette);
+        }
     } else {
         document.documentElement.setAttribute('color-mode', 'light');
         document.documentElement.classList.remove('dark-mode');
-        window.hyvor_talk.setPalette(lightPalette);
+        if (window.hyvor_talk) {
+            window.hyvor_talk.setPalette(lightPalette);
+        }
     }
 })();
 
@@ -16,12 +20,16 @@ var toggleColorMode = function toggleColorMode(e) {
         document.documentElement.setAttribute('color-mode', 'light');
         document.documentElement.classList.remove('dark-mode');
         localStorage.setItem('theme', 'light');
-        window.hyvor_talk.setPalette(lightPalette);
+        if (window.hyvor_talk) {
+            window.hyvor_talk.setPalette(lightPalette);
+        }
     } else {
         document.documentElement.setAttribute('color-mode', 'dark');
         document.documentElement.classList.add('dark-mode');
         localStorage.setItem('theme', 'dark');
-        window.hyvor_talk.setPalette(darkPalette);
+        if (window.hyvor_talk) {
+            window.hyvor_talk.setPalette(darkPalette);
+        }
     }
 };
 
