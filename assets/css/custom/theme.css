@@ -15,36 +15,74 @@ Font extensions:
 @font-face {
     font-family: 'Dubai';
 
-    src: url('../../fonts/DubaiW23-Regular.woff2') format('woff2'),
-    url('../../fonts/DubaiW23-Regular.woff') format('woff'),
-    url('../../fonts/DubaiW23-Regular.ttf') format('truetype');
+    src: url('../../fonts/dubai-regular.woff2') format('woff2'),
+    url('../../fonts/dubai-regular.woff') format('woff'),
+    url('../../fonts/dubai-regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Dubai';
     font-weight: 300;
 
-    src: url('../../fonts/DubaiW23-Light.woff2') format('woff2'),
-    url('../../fonts/DubaiW23-Light.woff') format('woff'),
-    url('../../fonts/DubaiW23-Light.ttf') format('truetype');
+    src: url('../../fonts/dubai-light.woff2') format('woff2'),
+    url('../../fonts/dubai-light.woff') format('woff'),
+    url('../../fonts/dubai-light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Dubai';
     font-weight: 500;
 
-    src: url('../../fonts/DubaiW23-Medium.woff2') format('woff2'),
-    url('../../fonts/DubaiW23-Medium.woff') format('woff'),
-    url('../../fonts/DubaiW23-Medium.ttf') format('truetype');
+    src: url('../../fonts/dubai-medium.woff2') format('woff2'),
+    url('../../fonts/dubai-medium.woff') format('woff'),
+    url('../../fonts/dubai-medium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Dubai';
     font-weight: bold;
 
-    src: url('../../fonts/DubaiW23-Bold.woff2') format('woff2'),
-    url('../../fonts/DubaiW23-Bold.woff') format('woff'),
-    url('../../fonts/DubaiW23-Bold.ttf') format('truetype');
+    src: url('../../fonts/dubai-bold.woff2') format('woff2'),
+    url('../../fonts/dubai-bold.woff') format('woff'),
+    url('../../fonts/dubai-bold.ttf') format('truetype');
+}
+
+/* Andada - serif */
+
+@font-face {
+    font-family: 'Andada';
+    font-weight: bold;
+
+    src: url('andada-bold.woff2') format('woff2'),
+    url('andada-bold.woff') format('woff'),
+    url('andada-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Andada';
+    font-weight: bold;
+    font-style: italic;
+
+    src: url('andada-bolditalic.woff2') format('woff2'),
+    url('andada-bolditalic.woff') format('woff'),
+    url('andada-bolditalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Andada';
+    font-style: italic;
+
+    src: url('andada-italic.woff2') format('woff2'),
+    url('andada-italic.woff') format('woff'),
+    url('andada-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Andada';
+
+    src: url('andada-regular.woff2') format('woff2'),
+    url('andada-regular.woff') format('woff'),
+    url('andada-regular.ttf') format('truetype');
 }
 
 /* Cascadia Code - monospaced */
@@ -149,6 +187,7 @@ Font extensions:
 
 :root {
     --font-sans-serif: 'Dubai';
+    --font-serif: 'Andada';
     --font-mono: 'Cascadia Code';
     --ghost-accent-color-dark-mode: rgba(255, 255, 255, 0.9);
 }
@@ -248,6 +287,7 @@ html.dark-mode hr {
 }
 
 .gh-content > blockquote.small {
+    font-family: var(--font-serif);
     font-size: 1.8rem;
     font-style: normal;
 
