@@ -17,7 +17,7 @@ Listed below are the changes from the original Casper theme. Changes are made in
 7. All tags are shown in post contents and post cards instead of just the primary tag.
 8. Blockquotes use monospaced font to be more artistically bold.
 9. New class defined for blockquotes when you want to use a smaller blockquote.
-10. Using [Commento](https://commento.io/) for comments.
+10. Using [Hyvor Talk](https://talk.hyvor.com/) for comments.
 11. Post body uses sans serif font.
 12. Added a cookie consent pop up.
 

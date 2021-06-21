@@ -77,11 +77,15 @@ into the {body} tag of the default.hbs template --}}
     </section>
 
     <section class="article-comments gh-canvas">
-        <script defer src="https://cdn.commento.io/js/commento.js" data-css-override="{{asset "built/custom/commento.css"}}"></script>
-        <script>
-            $("#commento-textarea-root").attr('placeholder', 'Leave a comment');
+        <div id="hyvor-talk-view"></div>
+        <script type="text/javascript">
+            var HYVOR_TALK_WEBSITE = 4394;
+            var HYVOR_TALK_CONFIG = {
+                url: false,
+                id: "{{comment_id}}"
+            };
         </script>
-        <div id="commento"></div>
+        <script async type="text/javascript" src="//talk.hyvor.com/web-api/embed.js"></script>
     </section>
 
 

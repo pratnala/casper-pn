@@ -10,6 +10,8 @@ Font extensions:
 
 */
 
+/* Dubai - sans serif */
+
 @font-face {
     font-family: 'Dubai';
 
@@ -44,6 +46,8 @@ Font extensions:
     url('../../fonts/DubaiW23-Bold.woff') format('woff'),
     url('../../fonts/DubaiW23-Bold.ttf') format('truetype');
 }
+
+/* Cascadia Code - monospaced */
 
 @font-face {
     font-family: 'Cascadia Code';
