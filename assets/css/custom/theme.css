@@ -53,9 +53,9 @@ Font extensions:
     font-family: 'Andada';
     font-weight: bold;
 
-    src: url('andada-bold.woff2') format('woff2'),
-    url('andada-bold.woff') format('woff'),
-    url('andada-bold.ttf') format('truetype');
+    src: url('../../fonts/andada-bold.woff2') format('woff2'),
+    url('../../fonts/andada-bold.woff') format('woff'),
+    url('../../fonts/andada-bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -63,26 +63,26 @@ Font extensions:
     font-weight: bold;
     font-style: italic;
 
-    src: url('andada-bolditalic.woff2') format('woff2'),
-    url('andada-bolditalic.woff') format('woff'),
-    url('andada-bolditalic.ttf') format('truetype');
+    src: url('../../fonts/andada-bolditalic.woff2') format('woff2'),
+    url('../../fonts/andada-bolditalic.woff') format('woff'),
+    url('../../fonts/andada-bolditalic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Andada';
     font-style: italic;
 
-    src: url('andada-italic.woff2') format('woff2'),
-    url('andada-italic.woff') format('woff'),
-    url('andada-italic.ttf') format('truetype');
+    src: url('../../fonts/andada-italic.woff2') format('woff2'),
+    url('../../fonts/andada-italic.woff') format('woff'),
+    url('../../fonts/andada-italic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Andada';
 
-    src: url('andada-regular.woff2') format('woff2'),
-    url('andada-regular.woff') format('woff'),
-    url('andada-regular.ttf') format('truetype');
+    src: url('../../fonts/andada-regular.woff2') format('woff2'),
+    url('../../fonts/andada-regular.woff') format('woff'),
+    url('../../fonts/andada-regular.ttf') format('truetype');
 }
 
 /* Cascadia Code - monospaced */
