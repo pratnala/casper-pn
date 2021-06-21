@@ -31,4 +31,11 @@ var lightPalette = {
         localStorage.setItem('theme', 'dark');
         palette = darkPalette;
     }
+
+    var theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+        palette = darkPalette;
+    } else {
+        palette = lightPalette;
+    }
 })();

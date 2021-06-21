@@ -3,14 +3,12 @@
     if (theme === 'dark') {
         document.documentElement.setAttribute('color-mode', 'dark');
         document.documentElement.classList.add('dark-mode');
-        palette = darkPalette;
         if (window.hyvor_talk) {
             window.hyvor_talk.setPalette(darkPalette);
         }
     } else {
         document.documentElement.setAttribute('color-mode', 'light');
         document.documentElement.classList.remove('dark-mode');
-        palette = lightPalette;
         if (window.hyvor_talk) {
             window.hyvor_talk.setPalette(lightPalette);
         }
