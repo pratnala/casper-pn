@@ -289,6 +289,7 @@ html.dark-mode hr {
 .gh-content > blockquote.small {
     font-family: var(--font-serif);
     font-size: 1.8rem;
+    font-weight: bold;
     font-style: normal;
 
     margin-top: 3vmin !important;
