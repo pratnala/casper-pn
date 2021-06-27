@@ -15,6 +15,7 @@ Font extensions:
 @font-face {
     font-family: 'Dubai';
 
+    font-display: swap;
     src: url('../../fonts/dubai-regular.woff2') format('woff2'),
     url('../../fonts/dubai-regular.woff') format('woff'),
     url('../../fonts/dubai-regular.ttf') format('truetype');
@@ -24,6 +25,7 @@ Font extensions:
     font-family: 'Dubai';
     font-weight: 300;
 
+    font-display: swap;
     src: url('../../fonts/dubai-light.woff2') format('woff2'),
     url('../../fonts/dubai-light.woff') format('woff'),
     url('../../fonts/dubai-light.ttf') format('truetype');
@@ -33,6 +35,7 @@ Font extensions:
     font-family: 'Dubai';
     font-weight: 500;
 
+    font-display: swap;
     src: url('../../fonts/dubai-medium.woff2') format('woff2'),
     url('../../fonts/dubai-medium.woff') format('woff'),
     url('../../fonts/dubai-medium.ttf') format('truetype');
@@ -42,6 +45,7 @@ Font extensions:
     font-family: 'Dubai';
     font-weight: bold;
 
+    font-display: swap;
     src: url('../../fonts/dubai-bold.woff2') format('woff2'),
     url('../../fonts/dubai-bold.woff') format('woff'),
     url('../../fonts/dubai-bold.ttf') format('truetype');
@@ -53,6 +57,7 @@ Font extensions:
     font-family: 'Andada';
     font-weight: bold;
 
+    font-display: swap;
     src: url('../../fonts/andada-bold.woff2') format('woff2'),
     url('../../fonts/andada-bold.woff') format('woff'),
     url('../../fonts/andada-bold.ttf') format('truetype');
@@ -63,6 +68,7 @@ Font extensions:
     font-weight: bold;
     font-style: italic;
 
+    font-display: swap;
     src: url('../../fonts/andada-bolditalic.woff2') format('woff2'),
     url('../../fonts/andada-bolditalic.woff') format('woff'),
     url('../../fonts/andada-bolditalic.ttf') format('truetype');
@@ -72,6 +78,7 @@ Font extensions:
     font-family: 'Andada';
     font-style: italic;
 
+    font-display: swap;
     src: url('../../fonts/andada-italic.woff2') format('woff2'),
     url('../../fonts/andada-italic.woff') format('woff'),
     url('../../fonts/andada-italic.ttf') format('truetype');
@@ -80,6 +87,7 @@ Font extensions:
 @font-face {
     font-family: 'Andada';
 
+    font-display: swap;
     src: url('../../fonts/andada-regular.woff2') format('woff2'),
     url('../../fonts/andada-regular.woff') format('woff'),
     url('../../fonts/andada-regular.ttf') format('truetype');
@@ -91,6 +99,7 @@ Font extensions:
     font-family: 'Cascadia Code';
     font-weight: 200;
 
+    font-display: swap;
     src: url('../../fonts/cascadiacode-extralight.woff2') format('woff2'),
     url('../../fonts/cascadiacode-extralight.woff') format('woff'),
     url('../../fonts/cascadiacode-extralight.ttf') format('truetype');
@@ -100,6 +109,7 @@ Font extensions:
     font-family: 'Cascadia Code';
     font-weight: 300;
 
+    font-display: swap;
     src: url('../../fonts/cascadiacode-light.woff2') format('woff2'),
     url('../../fonts/cascadiacode-light.woff') format('woff'),
     url('../../fonts/cascadiacode-light.ttf') format('truetype');
@@ -108,6 +118,7 @@ Font extensions:
 @font-face {
     font-family: 'Cascadia Code';
 
+    font-display: swap;
     src: url('../../fonts/cascadiacode-regular.woff2') format('woff2'),
     url('../../fonts/cascadiacode-regular.woff') format('woff'),
     url('../../fonts/cascadiacode-regular.ttf') format('truetype');
@@ -116,8 +127,8 @@ Font extensions:
 @font-face {
     font-family: 'Cascadia Code';
     font-weight: 600;
-    font-style: normal;
 
+    font-display: swap;
     src: url('../../fonts/cascadiacode-semibold.woff2') format('woff2'),
     url('../../fonts/cascadiacode-semibold.woff') format('woff'),
     url('../../fonts/cascadiacode-semibold.ttf') format('truetype');
@@ -127,6 +138,7 @@ Font extensions:
     font-family: 'Cascadia Code';
     font-weight: bold;
 
+    font-display: swap;
     src: url('../../fonts/cascadiacode-bold.woff2') format('woff2'),
     url('../../fonts/cascadiacode-bold.woff') format('woff'),
     url('../../fonts/cascadiacode-bold.ttf') format('truetype');
@@ -137,6 +149,7 @@ Font extensions:
     font-weight: 200;
     font-style: italic;
 
+    font-display: swap;
     src: url('../../fonts/cascadiacodeitalic-extralightitalic.woff2') format('woff2'),
     url('../../fonts/cascadiacodeitalic-extralightitalic.woff') format('woff'),
     url('../../fonts/cascadiacodeitalic-extralightitalic.ttf') format('truetype');
@@ -147,6 +160,7 @@ Font extensions:
     font-weight: 300;
     font-style: italic;
 
+    font-display: swap;
     src: url('../../fonts/cascadiacodeitalic-lightitalic.woff2') format('woff2'),
     url('../../fonts/cascadiacodeitalic-lightitalic.woff') format('woff'),
     url('../../fonts/cascadiacodeitalic-lightitalic.ttf') format('truetype');
@@ -156,6 +170,7 @@ Font extensions:
     font-family: 'Cascadia Code';
     font-style: italic;
 
+    font-display: swap;
     src: url('../../fonts/cascadiacodeitalic-italic.woff2') format('woff2'),
     url('../../fonts/cascadiacodeitalic-italic.woff') format('woff'),
     url('../../fonts/cascadiacodeitalic-italic.ttf') format('truetype');
@@ -166,6 +181,7 @@ Font extensions:
     font-weight: 600;
     font-style: italic;
 
+    font-display: swap;
     src: url('../../fonts/cascadiacodeitalic-semibolditalic.woff2') format('woff2'),
     url('../../fonts/cascadiacodeitalic-semibolditalic.woff') format('woff'),
     url('../../fonts/cascadiacodeitalic-semibolditalic.ttf') format('truetype');
@@ -176,6 +192,7 @@ Font extensions:
     font-weight: bold;
     font-style: italic;
 
+    font-display: swap;
     src: url('../../fonts/cascadiacodeitalic-bolditalic.woff2') format('woff2'),
     url('../../fonts/cascadiacodeitalic-bolditalic.woff') format('woff'),
     url('../../fonts/cascadiacodeitalic-bolditalic.ttf') format('truetype');
