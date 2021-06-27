@@ -6,7 +6,7 @@ It is currently based on the default theme, [Casper](https://github.com/TryGhost
 
 ## Changes from the original Casper theme 4.0
 
-Listed below are the changes from the original Casper theme. Changes are made in [custom.css](assets/css/custom.css) and [custom.js](assets/js/custom.js). All font files are available in [the fonts directory](assets/fonts).
+Listed below are the changes from the original Casper theme. Changes are made in [assets/css/custom](assets/css/custom) and [assets/js/custom](assets/js/custom). All font files are available in [assets/fonts](assets/fonts).
 
 1. Changed default sans serif font to [Dubai](https://dubaifont.com/).
 2. Changed default serif font to [Andada](https://www.fontsquirrel.com/fonts/andada).
