@@ -1,4 +1,4 @@
-# blog-theme
+# casper-pn
 
 This repository comprises the theme files for [my blog](https://blog.pratyushnalam.com) powered by [Ghost](https://ghost.org).
 
