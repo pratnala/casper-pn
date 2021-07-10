@@ -37,9 +37,9 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/pratnala/blog-theme.git"
+        "url": "https://github.com/pratnala/casper-pn.git"
     },
-    "bugs": "https://github.com/pratnala/blog-theme/issues",
+    "bugs": "https://github.com/pratnala/casper-pn/issues",
     "contributors": ["Pratyush Nalam"],
     "devDependencies": {
         "@tryghost/release-utils": "0.6.12",
