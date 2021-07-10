@@ -40,7 +40,9 @@
         "url": "https://github.com/pratnala/casper-pn.git"
     },
     "bugs": "https://github.com/pratnala/casper-pn/issues",
-    "contributors": ["Pratyush Nalam"],
+    "contributors": [
+        "Pratyush Nalam"
+    ],
     "devDependencies": {
         "@tryghost/release-utils": "0.6.15",
         "autoprefixer": "10.2.6",
