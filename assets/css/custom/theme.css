@@ -150,9 +150,9 @@ Font extensions:
     font-style: italic;
 
     font-display: swap;
-    src: url('../../fonts/cascadiacodeitalic-extralightitalic.woff2') format('woff2'),
-    url('../../fonts/cascadiacodeitalic-extralightitalic.woff') format('woff'),
-    url('../../fonts/cascadiacodeitalic-extralightitalic.ttf') format('truetype');
+    src: url('../../fonts/cascadiacode-extralightitalic.woff2') format('woff2'),
+    url('../../fonts/cascadiacode-extralightitalic.woff') format('woff'),
+    url('../../fonts/cascadiacode-extralightitalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -161,9 +161,9 @@ Font extensions:
     font-style: italic;
 
     font-display: swap;
-    src: url('../../fonts/cascadiacodeitalic-lightitalic.woff2') format('woff2'),
-    url('../../fonts/cascadiacodeitalic-lightitalic.woff') format('woff'),
-    url('../../fonts/cascadiacodeitalic-lightitalic.ttf') format('truetype');
+    src: url('../../fonts/cascadiacode-lightitalic.woff2') format('woff2'),
+    url('../../fonts/cascadiacode-lightitalic.woff') format('woff'),
+    url('../../fonts/cascadiacode-lightitalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -171,9 +171,9 @@ Font extensions:
     font-style: italic;
 
     font-display: swap;
-    src: url('../../fonts/cascadiacodeitalic-italic.woff2') format('woff2'),
-    url('../../fonts/cascadiacodeitalic-italic.woff') format('woff'),
-    url('../../fonts/cascadiacodeitalic-italic.ttf') format('truetype');
+    src: url('../../fonts/cascadiacode-italic.woff2') format('woff2'),
+    url('../../fonts/cascadiacode-italic.woff') format('woff'),
+    url('../../fonts/cascadiacode-italic.ttf') format('truetype');
 }
 
 @font-face {
@@ -182,9 +182,9 @@ Font extensions:
     font-style: italic;
 
     font-display: swap;
-    src: url('../../fonts/cascadiacodeitalic-semibolditalic.woff2') format('woff2'),
-    url('../../fonts/cascadiacodeitalic-semibolditalic.woff') format('woff'),
-    url('../../fonts/cascadiacodeitalic-semibolditalic.ttf') format('truetype');
+    src: url('../../fonts/cascadiacode-semibolditalic.woff2') format('woff2'),
+    url('../../fonts/cascadiacode-semibolditalic.woff') format('woff'),
+    url('../../fonts/cascadiacode-semibolditalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -193,9 +193,9 @@ Font extensions:
     font-style: italic;
 
     font-display: swap;
-    src: url('../../fonts/cascadiacodeitalic-bolditalic.woff2') format('woff2'),
-    url('../../fonts/cascadiacodeitalic-bolditalic.woff') format('woff'),
-    url('../../fonts/cascadiacodeitalic-bolditalic.ttf') format('truetype');
+    src: url('../../fonts/cascadiacode-bolditalic.woff2') format('woff2'),
+    url('../../fonts/cascadiacode-bolditalic.woff') format('woff'),
+    url('../../fonts/cascadiacode-bolditalic.ttf') format('truetype');
 }
 
 /* Root variables */

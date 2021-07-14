@@ -10,7 +10,7 @@ Listed below are the changes from the original Casper theme. Changes are made in
 
 1. Changed default sans serif font to [Dubai](https://dubaifont.com/).
 2. Changed default serif font to [Andada](https://www.fontsquirrel.com/fonts/andada).
-3. Default monospaced font set to [Cascadia Code](https://github.com/microsoft/cascadia-code). Using v2105.24.
+3. Default monospaced font set to [Cascadia Code](https://github.com/microsoft/cascadia-code). Using v2106.17.
 4. Post content is justified.
 5. Automatic dark mode. Additional toggle for user to override and store user preference in a cookie.
 6. Added dark mode friendly styling for article tags in post contents and post cards (used on home page, author pages, and tag pages), 404 page, and horizontal lines (`<hr>` tags).
