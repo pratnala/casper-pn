@@ -77,7 +77,7 @@ readingProgress(".gh-content", ".reading-progress-bar");
 
 $(document).ready(function () {
     $('.byline-meta-date').each(function (date) {
-        var date = $(date);
+        var $date = $(date);
 
         $date.html(moment($date.attr('datetime')).format('MMMM DD, YYYY h:mm a'));
     });
