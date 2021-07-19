@@ -355,7 +355,7 @@ progress.reading-progress-bar[value]::-webkit-progress-bar {
 }
 
 progress.reading-progress-bar[value]::-webkit-progress-value {
-    background-color: #2b7ba7;
+    background-color: #30b6fd;
 }
 
 html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
