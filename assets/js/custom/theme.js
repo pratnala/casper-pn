@@ -76,11 +76,17 @@ readingProgress(".gh-content", ".reading-progress-bar");
 // Post time
 
 $(document).ready(function () {
-    $('.byline-meta-date').each(function (i, date, time) {
+    $('.byline-meta-date').each(function (i, date) {
         var $date = $(date);
-        var $time = $(time);
 
         $date.html(moment($date.attr('datetime')).format('MMMM D, YYYY [at] h:mm a'));
+    });
+});
+
+$(document).ready(function () {
+    $('.post-card-byline-meta-date').each(function (i, time) {
+        var $time = $(time);
+
         $time.html(moment($time.attr('datetime')).format('MMMM D, YYYY [at] h:mm a'));
     });
 });
