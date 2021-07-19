@@ -87,6 +87,6 @@ $(document).ready(function () {
     $('.post-card-byline-meta-date').each(function (i, time) {
         var $time = $(time);
 
-        $time.html(moment($time.attr('datetime')).format('MMMM D, YYYY [at] h:mm a'));
+        $time.html(moment($time.attr('datetime')).format('MMM D, YYYY [@] h:mm a'));
     });
 });
