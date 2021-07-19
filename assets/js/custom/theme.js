@@ -1,3 +1,5 @@
+// Dark mode toggle
+
 (function () {
     var theme = localStorage.getItem('theme');
     if (theme === 'dark') {
@@ -39,6 +41,8 @@ toggleColorButtons.forEach(function (btn) {
     btn.addEventListener('click', toggleColorMode);
 });
 
+// Progress bar
+
 const readingProgress = (contentArea, progressBar) => {
     const content = document.querySelector(contentArea);
     const progress = document.querySelector(progressBar);
@@ -68,3 +72,13 @@ const readingProgress = (contentArea, progressBar) => {
 };
 
 readingProgress(".gh-content", ".reading-progress-bar");
+
+// Post time
+
+$document.ready(function () {
+    $('.post-date').each(function (date) {
+        var date = $(date);
+
+        $date.html(moment($date.attr('datetime')).format('MMMM DD, YYYY h:mm a'));
+    });
+});
