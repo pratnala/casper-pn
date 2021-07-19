@@ -38,3 +38,33 @@ var toggleColorButtons = document.querySelectorAll('.color-mode-btn');
 toggleColorButtons.forEach(function (btn) {
     btn.addEventListener('click', toggleColorMode);
 });
+
+const readingProgress = (contentArea, progressBar) => {
+    const content = document.querySelector(contentArea);
+    const progress = document.querySelector(progressBar);
+
+    const frameListening = () => {
+        const contentBox = content.getBoundingClientRect();
+        const midPoint = window.innerHeight / 2;
+
+        if (contentBox.top > midPoint) {
+            progress.value = 0;
+        }
+
+        if (contentBox.top < midPoint) {
+            progress.value = progress.max;
+        }
+
+        if (contentBox.top <= midPoint && contentBox.bottom >= midPoint) {
+            progress.value =
+                (progress.max * Math.abs(contentBox.top - midPoint)) /
+                contentBox.height;
+        }
+
+        window.requestAnimationFrame(frameListening);
+    };
+
+    window.requestAnimationFrame(frameListening);
+};
+
+readingProgress(".post-full-content", ".reading-progress-bar");
