@@ -76,7 +76,7 @@ readingProgress(".gh-content", ".reading-progress-bar");
 // Post time
 
 $(document).ready(function () {
-    $('.byline-meta-date').each(function (i, date) {
+    $('.byline-meta-date').each(function (i, date, time) {
         var $date = $(date);
         var $time = $(time);
 
