@@ -67,4 +67,4 @@ const readingProgress = (contentArea, progressBar) => {
     window.requestAnimationFrame(frameListening);
 };
 
-readingProgress(".post-full-content", ".reading-progress-bar");
+readingProgress(".post", ".reading-progress-bar");
