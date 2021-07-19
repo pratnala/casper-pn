@@ -12,18 +12,19 @@ Listed below are the changes from the original Casper theme. Changes are made in
 2. Changed default serif font to [Andada](https://www.fontsquirrel.com/fonts/andada).
 3. Default monospaced font set to [Cascadia Code](https://github.com/microsoft/cascadia-code). Using v2106.17.
 4. Post content is justified.
-5. Automatic dark mode. Additional toggle for user to override and store user preference in a cookie.
-6. Added dark mode friendly styling for article tags in post contents and post cards (used on home page, author pages, and tag pages), 404 page, and horizontal lines (`<hr>` tags).
-7. Top header is sticky everywhere except home page.
-8. All tags are shown in post contents and post cards instead of just the primary tag.
-9. Post body uses sans serif font.
-10. Blockquotes use monospaced font to be more artistically bold.
-11. New class defined for blockquotes when you want to use a smaller blockquote. Small blockquotes use serif font to stand out in emphasis.
-12. Added a progress bar on posts to illustrate how much has been read.
-13. Using [Hyvor Talk](https://talk.hyvor.com/) for comments.
-14. Using [Fathom Analytics](https://usefathom.com/) for website analytics.
-15. Added a cookie consent pop up.
-16. jQuery dependency is kept locally instead of loading remotely.
+5. Adding post's published time in client's time zone.
+6. Automatic dark mode. Additional toggle for user to override and store user preference in a cookie.
+7. Added dark mode friendly styling for article tags in post contents and post cards (used on home page, author pages, and tag pages), 404 page, and horizontal lines (`<hr>` tags).
+8. Top header is sticky everywhere except home page.
+9. All tags are shown in post contents and post cards instead of just the primary tag.
+10. Post body uses sans serif font.
+11. Blockquotes use monospaced font to be more artistically bold.
+12. New class defined for blockquotes when you want to use a smaller blockquote. Small blockquotes use serif font to stand out in emphasis.
+13. Added a progress bar on posts to illustrate how much has been read.
+14. Using [Hyvor Talk](https://talk.hyvor.com/) for comments.
+15. Using [Fathom Analytics](https://usefathom.com/) for website analytics.
+16. Added a cookie consent pop up.
+17. jQuery dependency is kept locally instead of loading remotely.
 
 ## How to use this theme in your Ghost-powered website
 

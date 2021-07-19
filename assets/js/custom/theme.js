@@ -76,9 +76,9 @@ readingProgress(".gh-content", ".reading-progress-bar");
 // Post time
 
 $(document).ready(function () {
-    $('.byline-meta-date').each(function (date) {
+    $('.byline-meta-date').each(function (i, date) {
         var $date = $(date);
 
-        $date.html(moment($date.attr('datetime')).format('MMMM DD, YYYY h:mm a'));
+        $date.html(moment($date.attr('datetime')).format('MMMM D, YYYY [at] h:mm a'));
     });
 });
