@@ -18,26 +18,26 @@
                 {{/if}}
 
                 <h1>{{name}}</h1>
-                <h3>
+                <h2>
                     {{#if bio}}
                         {{bio}}
                     {{else}}
                         {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}} published
                     {{/if}}
-                </h3>
+                </h2>
 
                 <div class="author-profile-meta">
                     {{#if location}}
                     <h3 class="author-profile-location">📍 {{location}}</h3>
                     {{/if}}
                     {{#if website}}
-                    <span><a class="author-profile-social-link" href="{{website}}" target="_blank" rel="noopener">{{website}}</a></span>
+                    <h4><a class="author-profile-social-link" href="{{website}}" target="_blank" rel="noopener">{{website}}</a></h4>
                     {{/if}}
                     {{#if twitter}}
-                    <span><a class="author-profile-social-link" href="{{twitter_url}}" target="_blank" rel="noopener">{{twitter_url}}</a></span>
+                    <h4><a class="author-profile-social-link" href="{{twitter_url}}" target="_blank" rel="noopener">{{twitter_url}}</a></h4>
                     {{/if}}
                     {{#if facebook}}
-                    <span><a class="author-profile-social-link" href="{{facebook_url}}" target="_blank" rel="noopener">{{facebook_url}}</a></span>
+                    <h4><a class="author-profile-social-link" href="{{facebook_url}}" target="_blank" rel="noopener">{{facebook_url}}</a></h4>
                     {{/if}}
                 </div>
 

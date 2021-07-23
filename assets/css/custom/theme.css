@@ -390,5 +390,5 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
 }
 
 .author-profile h1 {
-    font-size: inherit;
+    font-size: 4.8rem;
 }
