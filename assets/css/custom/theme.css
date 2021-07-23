@@ -377,3 +377,10 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
 
     grid-column: 1/4;
 }
+
+/* Customize author page */
+
+.author-template .posts .post-feed {
+    grid-column: 1/4;
+    grid-template-columns: 1fr 1fr 1fr;
+}
