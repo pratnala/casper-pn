@@ -380,7 +380,15 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
 
 /* Customize author page */
 
+.author-template .posts {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .author-template .posts .post-feed {
     grid-column: 1/4;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.author-profile h1 {
+    font-size: inherit;
 }
