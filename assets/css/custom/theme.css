@@ -261,7 +261,7 @@ samp {
     fill: #fff;
 }
 
-/* hr styling */
+/* hr */
 
 hr {
     border: 1px solid var(--ghost-accent-color);
@@ -271,7 +271,7 @@ html.dark-mode hr {
     border: 1px solid var(--ghost-accent-color-dark-mode);
 }
 
-/* Make top header sticky */
+/* Top header sticky */
 
 .gh-head {
     position: -webkit-sticky;
@@ -293,7 +293,7 @@ html.dark-mode hr {
     font-family: var(--font-sans-serif);
 }
 
-/* Blockquote and small blockquote styling */
+/* Blockquote and small blockquote */
 
 .gh-content > blockquote {
     font-family: var(--font-mono);
@@ -316,7 +316,7 @@ html.dark-mode hr {
     display: inherit;
 }
 
-/* Update dark mode styling for missing elements */
+/* Dark mode for missing elements */
 
 html.dark-mode .article-tag,
 html.dark-mode .error-code,
@@ -362,7 +362,7 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Customizing post styles */
+/* Post content */
 
 .article-excerpt {
     font-size: 3rem;
@@ -370,7 +370,7 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
     opacity: 1;
 }
 
-/* Pagination styles */
+/* Content pagination */
 
 .pagination {
     text-align: center;
@@ -378,7 +378,17 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
     grid-column: 1/4;
 }
 
-/* Customize author page */
+/* Author page */
+
+.author-profile h1 {
+    font-size: 4.8rem;
+}
+
+.author-profile-social-link {
+    font-size: 2rem;
+
+    padding: 0 0 10px;
+}
 
 .author-template .posts {
     grid-template-columns: 1fr;
@@ -389,12 +399,34 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.author-profile h1 {
-    font-size: 4.8rem;
+@media (max-width: 900px) {
+    .author-template .posts .post-feed {
+        grid-template-columns: 1fr;
+    }
 }
 
-.author-profile-social-link {
-    font-size: 2rem;
+@media (max-width: 650px) {
+    .author-template .posts {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
 
-    padding: 0 0 10px;
+    .author-template .posts .post-feed {
+        grid-column: 1 / auto;
+    }
+}
+
+/* Responsive design on home page */
+
+@media (max-width: 1000px) {
+    .post-feed {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .post-feed {
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
 }
