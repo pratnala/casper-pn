@@ -369,3 +369,9 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
 
     opacity: 1;
 }
+
+/* Pagination styles */
+
+.pagination {
+    text-align: center;
+}
