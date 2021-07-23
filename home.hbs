@@ -29,12 +29,19 @@ into the {body} of the default.hbs template --}}
     <p>{{@site.description}}</p>
 </div>
 
-<section class="gh-content gh-canvas">
+{{!-- The main content area --}}
+<main id="site-main" class="site-main outer">
+    <div class="inner">
 
-    <h1 class="article-title">{{title}}</h1>
+        <section class="gh-content gh-canvas">
 
-    {{content}}
+            <h1 class="article-title">{{title}}</h1>
 
-</section>
+            {{content}}
+
+        </section>
+
+    </div>
+</main>
 
 {{/page}}
