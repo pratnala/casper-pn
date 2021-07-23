@@ -394,5 +394,7 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
 }
 
 .author-profile-social-link {
-    font-size: 2.2rem;
+    font-size: 2rem;
+
+    padding: 0 0 10px;
 }
