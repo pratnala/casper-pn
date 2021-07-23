@@ -20,7 +20,7 @@
     },
     "author": {
         "name": "Pratyush Nalam",
-        "email": "pratyushnalam@outlook.com",
+        "email": "blog@pratyushnalam.com",
         "url": "https://www.pratyushnalam.com/"
     },
     "gpm": {
@@ -65,7 +65,7 @@
         "defaults"
     ],
     "config": {
-        "posts_per_page": 25,
+        "posts_per_page": 10,
         "image_sizes": {
             "xxs": {
                 "width": 30
