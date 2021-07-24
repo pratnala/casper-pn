@@ -325,11 +325,11 @@ html.dark-mode .post-card-primary-tag {
 }
 
 html.dark-mode a.error-link,
-html.dark-mode a.home-section,
 html.dark-mode a.newer-posts,
 html.dark-mode a.older-posts,
 html.dark-mode .article-tag a,
-html.dark-mode .gh-content a {
+html.dark-mode .gh-content a,
+html.dark-mode .home-section a {
     color: rgba(255, 255, 255, 0.75);
 }
 
@@ -423,6 +423,10 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
 
 .gh-home {
     padding: 4vmin 0;
+}
+
+.home-section {
+    grid-column: 1/4;
 }
 
 /* Responsive design on home page */
