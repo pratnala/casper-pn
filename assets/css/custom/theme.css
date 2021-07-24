@@ -418,6 +418,12 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
     }
 }
 
+/* Home page */
+
+.gh-home {
+    padding: 4vmin 0;
+}
+
 /* Responsive design on home page */
 
 @media (max-width: 1000px) {
