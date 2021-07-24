@@ -41,6 +41,18 @@ into the {body} of the default.hbs template --}}
 
         </section>
 
+        <h2>Latest in technology</h2>
+
+        <div class="post-feed">
+
+            {{#get "posts" filter="primary_tag:technology"}}
+                {{#foreach posts limit="3"}}
+                    {{> "post-card"}}
+                {{/foreach}}
+            {{/get}}
+
+        </div>
+
     </div>
 </main>
 
