@@ -41,12 +41,48 @@ into the {body} of the default.hbs template --}}
 
         </section>
 
-        <h2>Latest in technology</h2>
+        <h2>Latest about me</h2>
 
         <div class="post-feed">
 
-            {{#get "posts" filter="primary_tag:technology"}}
-                {{#foreach posts limit="3"}}
+            {{#get "posts" filter="primary_tag:personal" limit="3"}}
+                {{#foreach posts}}
+                    {{> "post-card"}}
+                {{/foreach}}
+            {{/get}}
+
+        </div>
+
+        <h2>Latest on technology</h2>
+
+        <div class="post-feed">
+
+            {{#get "posts" filter="primary_tag:technology" limit="3"}}
+                {{#foreach posts}}
+                    {{> "post-card"}}
+                {{/foreach}}
+            {{/get}}
+
+        </div>
+
+        <h2>Latest from sports</h2>
+
+        <div class="post-feed">
+
+            {{#get "posts" filter="primary_tag:sports" limit="3"}}
+                {{#foreach posts}}
+                    {{> "post-card"}}
+                {{/foreach}}
+            {{/get}}
+
+        </div>
+
+        <h2>Latest about the world</h2>
+
+        <div class="post-feed">
+
+            {{#get "posts" filter="primary_tag:society" limit="3"}}
+                {{#foreach posts}}
                     {{> "post-card"}}
                 {{/foreach}}
             {{/get}}
