@@ -31,10 +31,12 @@ Listed below are the changes from the original Casper theme. Changes are made in
 ## How to use this theme in your Ghost-powered website
 
 1. Install [Node.js](https://nodejs.org/) and [Gulp](https://gulpjs.com/). Open a terminal window in the repository's root directory and run `gulp`.
-2. You now have 2 ways to use this theme in your website
+2. The analytics call is at line 17 in [default.hbs](default.hbs). If you are going to use Fathom, replace it with your site's URL. Else, delete it.
+3. The comments plugin is at line 80 in [post.hbs](post.hbs). Replace the `<section>` tab group with your site's code given by Hyvor or delete if you are using something else or nothing at all.
+4. You now have 2 ways to use this theme in your website
     * Zip the entire directory and upload it in the Ghost control panel under theme.
     * Set up a GitHub action to automatically deploy the theme to your blog in a seamless CI/CD manner. More information can be found [here](https://github.com/marketplace/actions/deploy-ghost-theme).
-3. If you want to make use of the custom routes, make sure to modify [this file](extras/routes.yaml) and upload it to Ghost under `Settings -> Labs` in your admin console.
+5. If you want to make use of the custom routes, make sure to modify [this file](extras/routes.yaml) and upload it to Ghost under `Settings -> Labs` in your admin console.
 
 ## Gratitude
 
