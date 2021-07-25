@@ -21,7 +21,7 @@ Listed below are the changes from the original Casper theme. Changes are made in
 11. Top header is sticky everywhere except home page.
 12. All tags are shown in post contents and post cards instead of just the primary tag.
 13. Blockquotes use monospaced font to be more artistically bold.
-14. New class defined for blockquotes when you want to use a smaller blockquote. Small blockquotes use serif font to stand out in emphasis.
+14. New class defined for blockquotes when you want to use a smaller blockquote. Small blockquotes use serif font to stand out in emphasis. To use it in posts on Ghost, use an HTML snippet with `<blockquote class="small">Your text here</blockquote>`.
 15. Added a progress bar on posts to illustrate how much has been read.
 16. Using [Hyvor Talk](https://talk.hyvor.com/) for privacy-focused comments.
 17. Using [Fathom Analytics](https://usefathom.com/) for privacy-focused website analytics.
