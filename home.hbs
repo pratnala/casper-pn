@@ -45,7 +45,7 @@ into the {body} of the default.hbs template --}}
 
         <div class="post-feed">
 
-            {{#get "posts" filter="primary_tag:personal" limit="3"}}
+            {{#get "posts" filter="primary_tag:personal" limit="3" include="authors,tags"}}
                 {{#foreach posts}}
                     {{> "post-card"}}
                 {{/foreach}}
@@ -61,7 +61,7 @@ into the {body} of the default.hbs template --}}
 
         <div class="post-feed">
 
-            {{#get "posts" filter="primary_tag:technology" limit="3"}}
+            {{#get "posts" filter="primary_tag:technology" limit="3" include="authors,tags"}}
                 {{#foreach posts}}
                     {{> "post-card"}}
                 {{/foreach}}
@@ -77,7 +77,7 @@ into the {body} of the default.hbs template --}}
 
         <div class="post-feed">
 
-            {{#get "posts" filter="primary_tag:sports" limit="3"}}
+            {{#get "posts" filter="primary_tag:sports" limit="3" include="authors,tags"}}
                 {{#foreach posts}}
                     {{> "post-card"}}
                 {{/foreach}}
@@ -93,7 +93,7 @@ into the {body} of the default.hbs template --}}
 
         <div class="post-feed">
 
-            {{#get "posts" filter="primary_tag:society" limit="3"}}
+            {{#get "posts" filter="primary_tag:society" limit="3" include="authors,tags"}}
                 {{#foreach posts}}
                     {{> "post-card"}}
                 {{/foreach}}
