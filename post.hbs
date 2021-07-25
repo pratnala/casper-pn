@@ -77,6 +77,14 @@ into the {body} tag of the default.hbs template --}}
         <hr>
     </section>
 
+    {{#prev_post}}
+        <a href="{{url}}">{{title}}</a>
+    {{/prev_post}}
+
+    {{#next_post}}
+        <a href="{{url}}">{{title}}</a>
+    {{/next_post}}
+
     <section class="article-comments gh-canvas">
         <div id="hyvor-talk-view"></div>
         <script type="text/javascript">
