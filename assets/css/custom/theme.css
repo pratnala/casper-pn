@@ -329,7 +329,8 @@ html.dark-mode a.newer-posts,
 html.dark-mode a.older-posts,
 html.dark-mode .article-tag a,
 html.dark-mode .gh-content a,
-html.dark-mode .home-section a {
+html.dark-mode .home-section a,
+html.dark-mode .prev-next a {
     color: rgba(255, 255, 255, 0.75);
 }
 
@@ -456,6 +457,7 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
 
 .prev-next {
     display: grid;
+    margin: 10px 0 0 0;
 
     grid-template-columns: 1fr 1fr;
 }
