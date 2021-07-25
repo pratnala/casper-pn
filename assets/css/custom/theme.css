@@ -443,3 +443,11 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
         grid-gap: 40px;
     }
 }
+
+/* Social icons */
+
+.gh-social-rss svg,
+.gh-social-twitter svg {
+    width: 20px;
+    height: 20px;
+}
