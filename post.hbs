@@ -77,17 +77,19 @@ into the {body} tag of the default.hbs template --}}
         <hr>
     </section>
 
-    <section class="gh-canvas prev-next">
-        <div>
-            {{#prev_post}}
-                <a href="{{url}}">⬅{{title}}</a>
-            {{/prev_post}}
-        </div>
+    <section class="gh-canvas">
+        <div class="prev-next">
+            <div class="prev-post">
+                {{#prev_post}}
+                    <a href="{{url}}">⬅{{title}}</a>
+                {{/prev_post}}
+            </div>
 
-        <div>
-            {{#next_post}}
-                <a href="{{url}}">{{title}}➡</a>
-            {{/next_post}}
+            <div class="next-post">
+                {{#next_post}}
+                    <a href="{{url}}">{{title}}➡</a>
+                {{/next_post}}
+            </div>
         </div>
     </section>
 

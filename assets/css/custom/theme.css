@@ -455,5 +455,15 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
 /* Previous and next at bottom of post */
 
 .prev-next {
+    display: grid;
+
     grid-template-columns: 1fr 1fr;
+}
+
+.prev-post {
+    text-align: left;
+}
+
+.next-post {
+    text-align: right;
 }
