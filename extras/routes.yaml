@@ -2,6 +2,8 @@ routes:
   /:
     template: home
     data: page.home
+  /tags/:
+    template: tags
 
 collections:
   /posts/:
