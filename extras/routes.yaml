@@ -4,6 +4,9 @@ routes:
     data: page.home
   /tags/:
     template: tags
+  /rss/:
+    template: rss
+    content_type: text/xml
 
 collections:
   /posts/:
