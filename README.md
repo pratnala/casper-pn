@@ -4,7 +4,7 @@ This repository comprises the theme files for [my blog](https://blog.pratyushnal
 
 It is currently based on the default theme, [Casper](https://github.com/TryGhost/Casper).
 
-## Changes from the original Casper theme 4.1.0
+## Changes from the original Casper theme 4.7.2
 
 Listed below are the changes from the original Casper theme. Changes are made in [assets/css/custom](assets/css/custom), [assets/js/custom](assets/js/custom), and the `.hbs` files under root. All font files are available in [assets/fonts](assets/fonts).
 
