@@ -1,59 +1,49 @@
 <!DOCTYPE html>
-<html lang="{{@site.locale}}">
-    <head>
-        {{!-- Basic meta - advanced meta is output with {ghost_head} below --}}
-        <title>{{meta_title}}</title>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="HandheldFriendly" content="True" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {{!-- Theme assets - use the {asset} helper to reference styles & scripts,
-        this will take care of caching and cache-busting automatically --}}
-        <link rel="apple-touch-icon" href="/favicon.png" /> {{!-- Adding favicon for iOS homescreen support --}}
-        <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
-        <link rel="stylesheet" type="text/css" href="{{asset "built/custom/theme.css"}}" />
-        <link rel="stylesheet" type="text/css" href="{{asset "built/custom/cookieconsent.css"}}" />
-        {{!-- Fathom Analytics --}}
-        <script src="https://wren.pratyushnalam.com/script.js" data-site="KSSTHQGL" defer></script>
-        {{!-- JS to load on page load --}}
-        <script src="{{asset "built/custom/init.js"}}"></script>
-        {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings,
-        it should always be the last tag before the closing head tag --}}
-        {{ghost_head}}
-    </head>
-    <body class="{{body_class}}">
-        <svg style="display: none;">
-            <symbol viewBox="0 0 24 24" id="moon">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </symbol>
-            <symbol viewBox="0 0 24 24" id="sun">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </symbol>
-        </svg>
-        <div class="viewport">
-            <header id="gh-head" class="gh-head {{#if @site.cover_image}}has-cover{{/if}}">
-                <nav class="gh-head-inner inner gh-container">
-                    <div class="gh-head-brand">
-                        <a class="gh-head-logo" href="{{@site.url}}">
-                            {{#if @site.logo}}
-                            <img src="{{@site.logo}}" alt="{{@site.title}}" />
-                            {{else}}
-                            {{@site.title}}
-                            {{/if}}
-                        </a>
-                        <a class="gh-burger" role="button">
-                            <div class="gh-burger-box">
-                                <div class="gh-burger-inner"></div>
-                            </div>
-                        </a>
+<html lang="{{@site.locale}}"{{#match @custom.color_scheme "Dark"}} class="dark-mode"{{/match}}{{#match @custom.color_scheme "Auto"}} class="auto-color"{{/match}}>
+<head>
+
+    {{!-- Basic meta - advanced meta is output with {ghost_head} below --}}
+    <title>{{meta_title}}</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        :root {
+            {{#if @custom.header_button_background}}
+            --button-bg-color: {{@custom.header_button_background}};
+            {{/if}}
+            --button-text-color: {{#match @custom.header_button_text_color "Light"}}#fff{{else}}var(--color-darkgrey){{/match}};
+        }
+    </style>
+
+    {{!-- Theme assets - use the {asset} helper to reference styles & scripts,
+    this will take care of caching and cache-busting automatically --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
+
+    {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings,
+    it should always be the last tag before the closing head tag --}}
+    {{ghost_head}}
+
+</head>
+<body class="{{body_class}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Modern sans-serif"}} has-sans-body{{/match}}">
+<div class="viewport">
+
+    <header id="gh-head" class="gh-head{{#match @custom.publication_cover_style "!=" "None"}} has-cover{{/match}}">
+        <nav class="gh-head-inner inner gh-container">
+
+            <div class="gh-head-brand">
+                <a class="gh-head-logo" href="{{@site.url}}">
+                    {{#if @site.logo}}
+                        <img src="{{@site.logo}}" alt="{{@site.title}}" />
+                    {{else}}
+                        {{@site.title}}
+                    {{/if}}
+                </a>
+                <a class="gh-burger" role="button">
+                    <div class="gh-burger-box">
+                        <div class="gh-burger-inner"></div>
                     </div>
                     <div class="gh-head-menu">
                         {{navigation}}
@@ -103,7 +93,29 @@
                     </nav>
                     <div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
                 </div>
-            </footer>
+
+                {{#unless @member}}
+                    <a class="gh-head-button" href="#/portal/signup" data-portal="signup">Subscribe</a>
+                {{else}}
+                    <a class="gh-head-button" href="#/portal/account" data-portal="account">Account</a>
+                {{/unless}}
+            </div>
+        </nav>
+    </header>
+
+    <div class="site-content">
+        {{!-- All other templates get inserted here, index.hbs, post.hbs, etc --}}
+        {{{body}}}
+    </div>
+
+    {{!-- The global footer at the very bottom of the screen --}}
+    <footer class="site-footer outer">
+        <div class="inner">
+            <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
+            <nav class="site-footer-nav">
+                {{navigation type="secondary"}}
+            </nav>
+            <div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
         </div>
         {{!-- /.viewport --}}
         {{!-- Scripts - handle member signups, responsive videos, infinite scroll, floating headers, dark mode toggling, and galleries --}}
