@@ -112,41 +112,43 @@ into the {body} tag of the default.hbs template --}}
 </main>
 
 {{#match @custom.email_signup_for_logged_out_visitors "!=" "None"}}
-{{#unless @member}}{{#if access}}
-    <section class="footer-cta {{#match @custom.email_signup_for_logged_out_visitors "Bottom of post"}}cta-alt{{/match}}">
-        <div class="inner">
-            {{#if @custom.email_signup_text}}<h2>{{@custom.email_signup_text}}</h2>{{/if}}
-            <a class="footer-cta-button" href="#/portal">
-                <div class="footer-cta-input">Enter your email</div>
-                <span>Sign me up! 🎉</span>
-            </a>
-            {{!-- ^ This looks like a form element, but it's just a link to Portal,
-            making the form validation and submission much simpler. --}}
-        </div>
-    </section>
-{{/if}}{{/unless}}
+    {{#unless @member}}
+        {{#if access}}
+            <section class="footer-cta {{#match @custom.email_signup_for_logged_out_visitors "Bottom of post"}}cta-alt{{/match}}">
+                <div class="inner">
+                    {{#if @custom.email_signup_text}}<h2>{{@custom.email_signup_text}}</h2>{{/if}}
+                    <a class="footer-cta-button" href="#/portal" data-portal>
+                        <div class="footer-cta-input">Enter your email</div>
+                        <span>Sign me up! 🎉</span>
+                    </a>
+                    {{!-- ^ This looks like a form element, but it's just a link to Portal,
+                    making the form validation and submission much simpler. --}}
+                </div>
+            </section>
+        {{/if}}
+    {{/unless}}
 {{/match}}
 
 
 {{!-- Read more links, just above the footer --}}
-<aside class="read-more-wrap">
-    <div class="read-more inner">
+{{#if @custom.show_recent_posts}}
+    {{!-- The {#get} helper below fetches some of the latest posts here
+    so that people have something else to read when they finish this one.
 
-        {{!-- The {#get} helper below fetches some of the latest posts here
-        so that people have something else to read when they finish this one.
+    This query gets the latest 3 posts on the site, but adds a filter to
+    exclude the post we're currently on from being included. --}}
 
-        This query gets the latest 3 posts on the site, but adds a filter to
-        exclude the post we're currently on from being included. --}}
-
-        {{#get "posts" filter="id:-{{id}}" include="authors" limit="3" as |more_posts|}}
-            {{#if more_posts}}
-                {{#foreach more_posts}}
-                    {{> "post-card"}}
-                {{/foreach}}
-            {{/if}}
-        {{/get}}
-
-    </div>
-</aside>
+    {{#get "posts" filter="id:-{{id}}" include="authors" limit="3" as |more_posts|}}
+        {{#if more_posts}}
+            <aside class="read-more-wrap">
+                <div class="read-more inner">
+                    {{#foreach more_posts}}
+                        {{> "post-card"}}
+                    {{/foreach}}
+                </div>
+            </aside>
+        {{/if}}
+    {{/get}}
+{{/if}}
 
 {{/post}}
