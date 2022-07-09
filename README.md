@@ -2,7 +2,9 @@
 
 This repository comprises the theme files for [my blog](https://blog.pratyushnalam.com) powered by [Ghost](https://ghost.org).
 
-It is currently based on the default theme, [Casper](https://github.com/TryGhost/Casper).
+It is an extension of the default theme, [Casper](https://github.com/TryGhost/Casper).
+
+> `casper-pn` is currently based on v4 of Casper and the upgrade to v5 is in the works. Stay tuned!
 
 ## Changes from the original Casper theme 4.7.2
 
