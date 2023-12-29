@@ -12,3 +12,6 @@ Listed below are the changes from the original Casper theme. Changes are made in
    1. Default sans font - Dubai
    2. Default serif font - Andada
    3. Default monospaced font - Cascadia Code
+2. Post updates
+   1. Bigger post subtitle
+   2. Justify post content

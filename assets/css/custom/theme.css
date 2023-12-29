@@ -208,3 +208,24 @@ Font extensions:
     --font-mono: 'Cascadia Code';
     --ghost-accent-color-dark-mode: rgba(255, 255, 255, 0.9);
 }
+
+/* Use default fonts */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: var(--font-mono);
+}
+
+/* Bigger post subtitle */
+
+.article-excerpt {
+    font-size: clamp(2.5rem, 2.8vw, 3rem);
+}
+
+/* Justify post content */
+
+.gh-content {
+    text-align: justify;
+}
