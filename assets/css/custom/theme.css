@@ -221,6 +221,10 @@ Font extensions:
 
 /* Use default fonts */
 
+body.has-sans-body {
+    font-family: var(--font-sans);
+}
+
 code,
 kbd,
 pre,
