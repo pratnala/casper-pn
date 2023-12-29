@@ -13,7 +13,7 @@ Listed below are the changes from the original Casper theme. Changes are made in
 1. Changed default sans serif font to [Dubai](https://dubaifont.com/).
 2. Changed default serif font to [Andada](https://www.fontsquirrel.com/fonts/andada).
 3. Default monospaced font set to [Cascadia Code](https://github.com/microsoft/cascadia-code). Using v2106.17.
-4. Post content is justified. Excerpt/subtitle size is increased. Post body uses sans serif font.
+4. Post content is justified. Excerpt/subtitle size is increased.
 5. A [custom home page](home.hbs) layout with a short welcome blurb and three most recent posts from selected tags.
 6. Custom routes added [here](extras/routes.yaml). These can be modified as per requirements and needs to be manually uploaded to Ghost. All posts are at `/posts/`.
 7. Posts in the all posts, author, and tag pages are paginated with a [custom template](partials/pagination.hbs).

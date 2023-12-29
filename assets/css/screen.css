@@ -52,7 +52,7 @@ production stylesheet in assets/built/screen.css
      */
 
     /* Fonts */
-    --font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     --font-serif: Georgia, Times, serif;
     --font-mono: Menlo, Courier, monospace;
 
@@ -635,7 +635,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
 }
 
 .has-sans-body .post-card-excerpt {
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-sans);
 }
 
 .post-card-excerpt p {
@@ -1285,7 +1285,7 @@ iframe.instagram-media + script + :not([id]) {
     width: auto;
     border-spacing: 0;
     border-collapse: collapse;
-    font-family: var(--font-sans-serif);
+    font-family: var(--font-sans);
     font-size: 1.6rem;
     white-space: nowrap;
     vertical-align: top;

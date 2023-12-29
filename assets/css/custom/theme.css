@@ -203,7 +203,7 @@ Font extensions:
 /* Set default fonts */
 
 :root {
-    --font-sans-serif: 'Dubai';
+    --font-sans: 'Dubai';
     --font-serif: 'Andada';
     --font-mono: 'Cascadia Code';
     --ghost-accent-color-dark-mode: rgba(255, 255, 255, 0.9);
@@ -220,10 +220,6 @@ Font extensions:
 }
 
 /* Use default fonts */
-
-body {
-    font-family: var(--font-sans-serif);
-}
 
 code,
 kbd,
@@ -286,16 +282,9 @@ html.dark-mode hr {
     text-align: justify;
 }
 
-.gh-content > ol,
-.gh-content > ul,
-.gh-content > dl,
-.gh-content > p {
-    font-family: var(--font-sans-serif);
-}
-
 /* Blockquote and small blockquote */
 
-.gh-content > blockquote {
+.has-sans-body .gh-content > blockquote {
     font-family: var(--font-mono);
 }
 
