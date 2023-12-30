@@ -233,3 +233,7 @@ samp {
 :is(.tag-template, .author-template) .post-card-large .post-card-excerpt {
     overflow-y: hidden;
 }
+
+.pagination {
+    display: inherit;
+}
