@@ -1,2 +1,2 @@
-$(document).ready(function(){$(".byline-meta-date").each(function(t,a){a=$(a);a.html(moment.unix(a.attr("datetime")).format("MMMM D, YYYY [at] h:mm a"))})}),$(document).ready(function(){$(".post-card-byline-meta-date").each(function(t,a){a=$(a);a.html(moment(a.attr("datetime")).format("MMM D, YYYY [@] h:mm a"))})});
+$(document).ready(function(){$(".byline-meta-date").each(function(t,a){a=$(a);a.html(moment.unix(a.attr("datetime")).format("MMMM D, YYYY [at] h:mm a"))})}),$(document).ready(function(){$(".post-card-meta-date").each(function(t,a){a=$(a);a.html(moment.unix(a.attr("datetime")).format("MMM D, YYYY [@] h:mm a"))})});
 //# sourceMappingURL=theme.js.map
