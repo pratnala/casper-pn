@@ -70,6 +70,13 @@ function js(done) {
         dest('assets/built/', {sourcemaps: '.'}),
         livereload()
     ], handleError(done));
+
+    pump([
+        src('assets/js/custom/*.js', { sourcemaps: true }),
+        uglify(),
+        dest('assets/built/custom', { sourcemaps: '.' }),
+        livereload()
+    ], handleError(done));
 }
 
 function zipper(done) {

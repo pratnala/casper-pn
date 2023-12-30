@@ -14,4 +14,5 @@ Listed below are the changes from the original Casper theme. Changes are made in
    3. Default monospaced font - Cascadia Code
 2. Post updates
    1. Bigger post subtitle
-   2. Justify post content
+   2. Publish time in client time zone added to date
+   3. Justify post content
