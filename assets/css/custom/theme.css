@@ -17,8 +17,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/dubai-regular.woff2') format('woff2'),
-        url('../../fonts/dubai-regular.woff') format('woff'),
-        url('../../fonts/dubai-regular.ttf') format('truetype');
+    url('../../fonts/dubai-regular.woff') format('woff'),
+    url('../../fonts/dubai-regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -27,8 +27,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/dubai-light.woff2') format('woff2'),
-        url('../../fonts/dubai-light.woff') format('woff'),
-        url('../../fonts/dubai-light.ttf') format('truetype');
+    url('../../fonts/dubai-light.woff') format('woff'),
+    url('../../fonts/dubai-light.ttf') format('truetype');
 }
 
 @font-face {
@@ -37,8 +37,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/dubai-medium.woff2') format('woff2'),
-        url('../../fonts/dubai-medium.woff') format('woff'),
-        url('../../fonts/dubai-medium.ttf') format('truetype');
+    url('../../fonts/dubai-medium.woff') format('woff'),
+    url('../../fonts/dubai-medium.ttf') format('truetype');
 }
 
 @font-face {
@@ -47,8 +47,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/dubai-bold.woff2') format('woff2'),
-        url('../../fonts/dubai-bold.woff') format('woff'),
-        url('../../fonts/dubai-bold.ttf') format('truetype');
+    url('../../fonts/dubai-bold.woff') format('woff'),
+    url('../../fonts/dubai-bold.ttf') format('truetype');
 }
 
 /* Andada - serif */
@@ -59,8 +59,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/andada-bold.woff2') format('woff2'),
-        url('../../fonts/andada-bold.woff') format('woff'),
-        url('../../fonts/andada-bold.ttf') format('truetype');
+    url('../../fonts/andada-bold.woff') format('woff'),
+    url('../../fonts/andada-bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -70,8 +70,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/andada-bolditalic.woff2') format('woff2'),
-        url('../../fonts/andada-bolditalic.woff') format('woff'),
-        url('../../fonts/andada-bolditalic.ttf') format('truetype');
+    url('../../fonts/andada-bolditalic.woff') format('woff'),
+    url('../../fonts/andada-bolditalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -80,8 +80,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/andada-italic.woff2') format('woff2'),
-        url('../../fonts/andada-italic.woff') format('woff'),
-        url('../../fonts/andada-italic.ttf') format('truetype');
+    url('../../fonts/andada-italic.woff') format('woff'),
+    url('../../fonts/andada-italic.ttf') format('truetype');
 }
 
 @font-face {
@@ -89,8 +89,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/andada-regular.woff2') format('woff2'),
-        url('../../fonts/andada-regular.woff') format('woff'),
-        url('../../fonts/andada-regular.ttf') format('truetype');
+    url('../../fonts/andada-regular.woff') format('woff'),
+    url('../../fonts/andada-regular.ttf') format('truetype');
 }
 
 /* Cascadia Code - monospaced */
@@ -101,8 +101,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/cascadiacode-extralight.woff2') format('woff2'),
-        url('../../fonts/cascadiacode-extralight.woff') format('woff'),
-        url('../../fonts/cascadiacode-extralight.ttf') format('truetype');
+    url('../../fonts/cascadiacode-extralight.woff') format('woff'),
+    url('../../fonts/cascadiacode-extralight.ttf') format('truetype');
 }
 
 @font-face {
@@ -111,8 +111,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/cascadiacode-light.woff2') format('woff2'),
-        url('../../fonts/cascadiacode-light.woff') format('woff'),
-        url('../../fonts/cascadiacode-light.ttf') format('truetype');
+    url('../../fonts/cascadiacode-light.woff') format('woff'),
+    url('../../fonts/cascadiacode-light.ttf') format('truetype');
 }
 
 @font-face {
@@ -120,8 +120,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/cascadiacode-regular.woff2') format('woff2'),
-        url('../../fonts/cascadiacode-regular.woff') format('woff'),
-        url('../../fonts/cascadiacode-regular.ttf') format('truetype');
+    url('../../fonts/cascadiacode-regular.woff') format('woff'),
+    url('../../fonts/cascadiacode-regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -130,8 +130,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/cascadiacode-semibold.woff2') format('woff2'),
-        url('../../fonts/cascadiacode-semibold.woff') format('woff'),
-        url('../../fonts/cascadiacode-semibold.ttf') format('truetype');
+    url('../../fonts/cascadiacode-semibold.woff') format('woff'),
+    url('../../fonts/cascadiacode-semibold.ttf') format('truetype');
 }
 
 @font-face {
@@ -140,8 +140,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/cascadiacode-bold.woff2') format('woff2'),
-        url('../../fonts/cascadiacode-bold.woff') format('woff'),
-        url('../../fonts/cascadiacode-bold.ttf') format('truetype');
+    url('../../fonts/cascadiacode-bold.woff') format('woff'),
+    url('../../fonts/cascadiacode-bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -151,8 +151,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/cascadiacode-extralightitalic.woff2') format('woff2'),
-        url('../../fonts/cascadiacode-extralightitalic.woff') format('woff'),
-        url('../../fonts/cascadiacode-extralightitalic.ttf') format('truetype');
+    url('../../fonts/cascadiacode-extralightitalic.woff') format('woff'),
+    url('../../fonts/cascadiacode-extralightitalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -162,8 +162,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/cascadiacode-lightitalic.woff2') format('woff2'),
-        url('../../fonts/cascadiacode-lightitalic.woff') format('woff'),
-        url('../../fonts/cascadiacode-lightitalic.ttf') format('truetype');
+    url('../../fonts/cascadiacode-lightitalic.woff') format('woff'),
+    url('../../fonts/cascadiacode-lightitalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -172,8 +172,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/cascadiacode-italic.woff2') format('woff2'),
-        url('../../fonts/cascadiacode-italic.woff') format('woff'),
-        url('../../fonts/cascadiacode-italic.ttf') format('truetype');
+    url('../../fonts/cascadiacode-italic.woff') format('woff'),
+    url('../../fonts/cascadiacode-italic.ttf') format('truetype');
 }
 
 @font-face {
@@ -183,8 +183,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/cascadiacode-semibolditalic.woff2') format('woff2'),
-        url('../../fonts/cascadiacode-semibolditalic.woff') format('woff'),
-        url('../../fonts/cascadiacode-semibolditalic.ttf') format('truetype');
+    url('../../fonts/cascadiacode-semibolditalic.woff') format('woff'),
+    url('../../fonts/cascadiacode-semibolditalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -194,8 +194,8 @@ Font extensions:
 
     font-display: swap;
     src: url('../../fonts/cascadiacode-bolditalic.woff2') format('woff2'),
-        url('../../fonts/cascadiacode-bolditalic.woff') format('woff'),
-        url('../../fonts/cascadiacode-bolditalic.ttf') format('truetype');
+    url('../../fonts/cascadiacode-bolditalic.woff') format('woff'),
+    url('../../fonts/cascadiacode-bolditalic.ttf') format('truetype');
 }
 
 /* Root variables */
@@ -206,7 +206,7 @@ Font extensions:
     --font-sans: 'Dubai';
     --font-serif: 'Andada';
     --font-mono: 'Cascadia Code';
-    --ghost-accent-color-dark-mode: rgba(255, 255, 255, 0.9);
+    --ghost-accent-color-dark-mode: rgba(255, 255, 255, .9);
 }
 
 /* Use default fonts */
@@ -230,10 +230,47 @@ samp {
     text-align: justify;
 }
 
+/* Remove scrollbar for author and tag description */
+
 :is(.tag-template, .author-template) .post-card-large .post-card-excerpt {
     overflow-y: hidden;
 }
 
+/* Enable pagination */
+
 .pagination {
     display: inherit;
+}
+
+/* Byline in post card */
+
+.post-card-meta-content {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.2em;
+
+    display: flex;
+    align-items: start;
+    flex: 1 1 50%;
+    flex-direction: column;
+
+    margin: 0 0 0 8px;
+
+    color: #90a2aa;
+}
+
+.post-card-meta > * + *:not(script)::before {
+    content: unset;
+}
+
+.post-card-meta-content span {
+    margin: 0;
+}
+
+html.auto-color .post-card-meta-content .author-name a {
+    color: #fff;
+}
+
+html.dark-mode .post-card-meta-content .author-name a {
+    color: #fff;
 }
