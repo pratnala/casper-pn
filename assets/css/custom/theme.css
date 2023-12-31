@@ -291,7 +291,7 @@ html.dark-mode .post-card-meta-content .author-name a {
 .post-feed {
     padding: max(4.8vmin, 36px) 0;
 
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 @media (min-width: 1001px) {
@@ -301,7 +301,7 @@ html.dark-mode .post-card-meta-content .author-name a {
 
     .post-card-large {
         grid-column: 1/span 3;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .post-card.dynamic {
@@ -372,4 +372,12 @@ html.dark-mode .post-card-meta-content .author-name a {
 .gh-icon-btn svg {
     width: 22px;
     height: 22px;
+}
+
+.gh-head-logo img {
+    max-height: 26px;
+}
+
+.read-more {
+    grid-template-columns: repeat(3, 1fr);
 }
