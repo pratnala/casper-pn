@@ -244,13 +244,18 @@ samp {
 
 /* Byline in post card */
 
+.author-avatar {
+    width: min(40px, 13.6vmin);
+    height: min(40px,13.6vmin);
+}
+
 .post-card-meta-content {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.2em;
 
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     flex: 1 1 50%;
     flex-direction: column;
 
@@ -267,10 +272,52 @@ samp {
     margin: 0;
 }
 
+html.auto-color .home-section a,
 html.auto-color .post-card-meta-content .author-name a {
     color: #fff;
 }
 
+html.dark-mode .home-section a,
 html.dark-mode .post-card-meta-content .author-name a {
     color: #fff;
+}
+
+/* Home page */
+
+.gh-home {
+    padding: 4vmin 0;
+}
+
+.post-feed {
+    padding: max(4.8vmin, 36px) 0;
+
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (min-width: 1001px) {
+    .post-card {
+        grid-column: unset;
+    }
+
+    .post-card-large {
+        grid-column: 1/span 3;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .post-card.dynamic {
+        grid-column: unset;
+    }
+}
+
+.has-cover .site-header-content {
+    min-height: 250px;
+    max-height: 400px;
+}
+
+.has-cover :is(.site-logo,.site-title) + .site-description {
+    font-size: 2.4rem;
+}
+
+.site-logo {
+    max-height: 55px;
 }

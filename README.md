@@ -16,3 +16,9 @@ Listed below are the changes from the original Casper theme. Changes are made in
    1. Bigger post subtitle
    2. Publish time in client time zone added to date
    3. Justify post content
+   4. Replaced Ghost comments with Hyvor Talk
+3. Post card layout
+   1. Add list of authors
+4. Remove infinite scroll and paginate instead
+5. Bugs
+   1. Removed extraneous scrollbar in tag/author description on tag/author page
