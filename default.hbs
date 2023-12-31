@@ -16,7 +16,10 @@
         {{!-- Theme assets - use the {asset} helper to reference styles & scripts,
         this will take care of caching and cache-busting automatically --}}
         <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
-        <link rel="stylesheet" type="text/css" href="{{asset "built/custom/theme.css"}}"
+        <link rel="stylesheet" type="text/css" href="{{asset "built/custom/theme.css"}}" />
+
+        {{!-- JS to load on page load --}}
+        <script src="{{asset "built/custom/init.js"}}"></script>
 
         {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings,
         it should always be the last tag before the closing head tag --}}
@@ -24,6 +27,26 @@
 
     </head>
     <body class="{{body_class}} is-head-{{#match @custom.navigation_layout "Logo on cover"}}left-logo{{else match @custom.navigation_layout "Logo in the middle"}}middle-logo{{else}}stacked{{/match}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Modern sans-serif"}} has-sans-body{{/match}}{{#if @custom.show_publication_cover}} has-cover{{/if}}">
+        <svg style="display: none;">
+
+            <symbol viewBox="0 0 24 24" id="moon">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </symbol>
+
+            <symbol viewBox="0 0 24 24" id="sun">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </symbol>
+
+        </svg>
+
         <div class="viewport">
 
             <header id="gh-head" class="gh-head outer{{#match @custom.header_style "Hidden"}} is-header-hidden{{/match}}">
@@ -50,24 +73,41 @@
                     </nav>
 
                     <div class="gh-head-actions">
-                        {{#unless @site.members_enabled}}
-                        {{^match @custom.navigation_layout "Stacked"}}
-                        <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
-                        {{/match}}
-                        {{else}}
-                        <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
-                        <div class="gh-head-members">
-                            {{#unless @member}}
-                            {{#unless @site.members_invite_only}}
-                            <a class="gh-head-link" href="#/portal/signin" data-portal="signin">Sign in</a>
-                            <a class="gh-head-button" href="#/portal/signup" data-portal="signup">Subscribe</a>
-                            {{else}}
-                            <a class="gh-head-button" href="#/portal/signin" data-portal="signin">Sign in</a>
-                            {{/unless}}
-                            {{else}}
-                            <a class="gh-head-button" href="#/portal/account" data-portal="account">Account</a>
-                            {{/unless}}
+                        <div class="gh-social">
+                            <button class="color-mode-btn light--hidden">
+                                <svg aria-hidden="true">
+                                    <use href="#sun"></use>
+                                </svg>
+                            </button>
+                            <button class="color-mode-btn dark--hidden">
+                                <svg aria-hidden="true">
+                                    <use href="#moon"></use>
+                                </svg>
+                            </button>
+                            <a class="gh-social-link" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/x"}}</a>
+                            <a class="gh-social-link" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
+                            <a class="gh-social-link" href="https://instagram.com/pratnala" title="Instagram" target="_blank" rel="noopener">{{> "icons/instagram"}}</a>
+                            <a class="gh-social-link" href="/rss" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
+                            <a class="gh-social-link" href="https://www.pratyushnalam.com" title="Website" target="_blank" rel="noopener">{{> "icons/globe"}}</a>
                         </div>
+                        {{#unless @site.members_enabled}}
+                            {{^match @custom.navigation_layout "Stacked"}}
+                            <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
+                            {{/match}}
+                        {{else}}
+                            <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
+                            <div class="gh-head-members">
+                                {{#unless @member}}
+                                    {{#unless @site.members_invite_only}}
+                                        <a class="gh-head-link" href="#/portal/signin" data-portal="signin">Sign in</a>
+                                        <a class="gh-head-button" href="#/portal/signup" data-portal="signup">Subscribe</a>
+                                    {{else}}
+                                        <a class="gh-head-button" href="#/portal/signin" data-portal="signin">Sign in</a>
+                                    {{/unless}}
+                                {{else}}
+                                    <a class="gh-head-button" href="#/portal/account" data-portal="account">Account</a>
+                                {{/unless}}
+                            </div>
                         {{/unless}}
                     </div>
                 </div>

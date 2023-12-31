@@ -321,3 +321,55 @@ html.dark-mode .post-card-meta-content .author-name a {
 .site-logo {
     max-height: 55px;
 }
+
+/* Dark mode toggle */
+
+:root[color-mode='light'] .light--hidden {
+    display: none;
+}
+
+:root[color-mode='dark'] .dark--hidden {
+    display: none;
+}
+
+.color-mode-btn {
+    margin-right: 5px;
+
+    cursor: pointer;
+
+    opacity: .8;
+    color: #111;
+    border: none;
+    background: none;
+}
+
+.color-mode-btn svg {
+    width: 22px;
+    height: 22px;
+
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.5px;
+}
+
+.color-mode-btn:hover svg,
+.color-mode-btn:focus svg,
+.color-mode-btn focus {
+    outline: none;
+
+    fill: #fff;
+}
+
+.gh-social-link svg {
+    width: 22px;
+    height: 22px;
+
+    fill: #fff;
+}
+
+.gh-icon-btn svg {
+    width: 22px;
+    height: 22px;
+}
