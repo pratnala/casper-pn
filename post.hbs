@@ -13,13 +13,13 @@ into the {body} tag of the default.hbs template --}}
         <header class="article-header gh-canvas">
 
             <div class="article-tag post-card-tags">
-                {{#primary_tag}}
+                {{#if tags}}
                     <span class="post-card-primary-tag">
                         {{#foreach tags}}
                             <a href="{{url}}">{{name}}</a>{{#unless @last}},&nbsp;{{/unless}}
                         {{/foreach}}
                     </span>
-                {{/primary_tag}}
+                {{/if}}
                 {{#if featured}}
                     <span class="post-card-featured">{{> "icons/fire"}} Featured</span>
                 {{/if}}
