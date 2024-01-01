@@ -41,11 +41,44 @@ toggleColorButtons.forEach(function (btn) {
     btn.addEventListener('click', toggleColorMode);
 });
 
+// Progress bar
+
+const readingProgress = (contentArea, progressBar) => {
+    const content = document.querySelector(contentArea);
+    const progress = document.querySelector(progressBar);
+
+    const frameListening = () => {
+        const contentBox = content.getBoundingClientRect();
+        const midPoint = window.innerHeight / 2;
+
+        if (contentBox.top > midPoint) {
+            progress.value = 0;
+        }
+
+        if (contentBox.top < midPoint) {
+            progress.value = progress.max;
+        }
+
+        if (contentBox.top <= midPoint && contentBox.bottom >= midPoint) {
+            progress.value =
+                (progress.max * Math.abs(contentBox.top - midPoint)) /
+                contentBox.height;
+        }
+
+        window.requestAnimationFrame(frameListening);
+    };
+
+    window.requestAnimationFrame(frameListening);
+};
+
+readingProgress(".gh-content", ".reading-progress-bar");
+
 /*
  * Published time for a post is formatted to a custom format in two places
  * 1. Byline on a post page
  * 2. Byline on the post preview card on the home page, author page, tag page, etc.
 */
+
 $(document).ready(function () {
     $('.byline-meta-date').each(function (i, date) {
         var $date = $(date);

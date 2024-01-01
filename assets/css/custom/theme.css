@@ -423,3 +423,36 @@ html.dark-mode hr {
     border-bottom: 1px solid hsla(0, 0%, 100%, .1);
     background: #0a0b0c;
 }
+
+/* Top header sticky */
+
+.gh-head {
+    position: -webkit-sticky;
+    position:         sticky; /* Check support on https://caniuse.com/?search=sticky. Supported for 95.34% of users */
+    z-index: 4000;
+    top: 0; /* Prevents content from scrolling on top of header */
+}
+
+/* Progress bar */
+
+progress.reading-progress-bar {
+    position: fixed;
+    z-index: 100;
+
+    width: 100%;
+    height: 5px;
+
+    appearance: none;
+}
+
+progress.reading-progress-bar[value]::-webkit-progress-bar {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+progress.reading-progress-bar[value]::-webkit-progress-value {
+    background-color: #30b6fd;
+}
+
+html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
+    background-color: rgba(255, 255, 255, .5);
+}
