@@ -273,12 +273,14 @@ samp {
 }
 
 html.auto-color .home-section a,
-html.auto-color .post-card-meta-content .author-name a {
+html.auto-color .post-card-meta-content .author-name a,
+html.auto-color .prev-next a {
     color: #fff;
 }
 
 html.dark-mode .home-section a,
-html.dark-mode .post-card-meta-content .author-name a {
+html.dark-mode .post-card-meta-content .author-name a,
+html.dark-mode .prev-next a {
     color: #fff;
 }
 
@@ -380,4 +382,44 @@ html.dark-mode .post-card-meta-content .author-name a {
 
 .read-more {
     grid-template-columns: repeat(3, 1fr);
+}
+
+/* Previous and next at bottom of post */
+
+.prev-next {
+    display: grid;
+
+    margin: 10px 0 0 0;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.prev-post {
+    text-align: left;
+}
+
+.next-post {
+    text-align: right;
+}
+
+/* hr */
+
+hr {
+    border: 1px solid var(--ghost-accent-color);
+}
+
+html.auto-mode hr {
+    border: 1px solid var(--ghost-accent-color-dark-mode);
+}
+
+html.dark-mode hr {
+    border: 1px solid var(--ghost-accent-color-dark-mode);
+}
+
+.read-more-wrap {
+    margin-bottom: calc(0px - max(12vmin, 64px));
+    padding: 4vmin;
+
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+    background: #0a0b0c;
 }
