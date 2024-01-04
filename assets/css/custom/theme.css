@@ -242,7 +242,7 @@ samp {
     display: inherit;
 }
 
-/* Byline in post card */
+/* Post card */
 
 .author-avatar {
     width: min(40px, 13.6vmin);
@@ -276,6 +276,16 @@ html.dark-mode .home-section a,
 html.dark-mode .post-card-meta-content .author-name a,
 html.dark-mode .prev-next a {
     color: #fff;
+}
+
+.post-card-image {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--ghost-accent-color);
+}
+
+html.dark-mode .post-card-image {
+    border-color: var(--ghost-accent-color-dark-mode);
 }
 
 /* Home page */
@@ -373,6 +383,8 @@ html.dark-mode .prev-next a {
     fill: #fff;
 }
 
+/* Top nav bar */
+
 .gh-social-link svg {
     width: 22px;
     height: 22px;
@@ -388,6 +400,8 @@ html.dark-mode .prev-next a {
 .gh-head-logo img {
     max-height: 26px;
 }
+
+/* Posts under post content */
 
 .read-more {
     grid-template-columns: repeat(3, 1fr);
@@ -494,14 +508,4 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
 
 .gh-content > blockquote.small::before {
     display: inherit;
-}
-
-.post-card-image {
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--ghost-accent-color);
-}
-
-html.dark-mode .post-card-image {
-    border-color: var(--ghost-accent-color-dark-mode);
 }
