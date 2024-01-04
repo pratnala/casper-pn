@@ -272,12 +272,6 @@ samp {
     margin: 0;
 }
 
-html.auto-color .home-section a,
-html.auto-color .post-card-meta-content .author-name a,
-html.auto-color .prev-next a {
-    color: #fff;
-}
-
 html.dark-mode .home-section a,
 html.dark-mode .post-card-meta-content .author-name a,
 html.dark-mode .prev-next a {
@@ -294,6 +288,18 @@ html.dark-mode .prev-next a {
     padding: max(4.8vmin, 36px) 0;
 
     grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 767px) {
+    .post-feed {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 991px) {
+    .post-feed {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (min-width: 1001px) {
@@ -324,6 +330,12 @@ html.dark-mode .prev-next a {
     max-height: 55px;
 }
 
+@media (max-width: 767px) {
+    .site-logo {
+        max-width: unset;
+    }
+}
+
 /* Dark mode toggle */
 
 :root[color-mode='light'] .light--hidden {
@@ -335,11 +347,8 @@ html.dark-mode .prev-next a {
 }
 
 .color-mode-btn {
-    margin-right: 5px;
-
     cursor: pointer;
 
-    opacity: .8;
     color: #111;
     border: none;
     background: none;
@@ -384,6 +393,18 @@ html.dark-mode .prev-next a {
     grid-template-columns: repeat(3, 1fr);
 }
 
+@media (max-width: 1000px) {
+    .read-more {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .read-more {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Previous and next at bottom of post */
 
 .prev-next {
@@ -408,10 +429,6 @@ hr {
     border: 1px solid var(--ghost-accent-color);
 }
 
-html.auto-mode hr {
-    border: 1px solid var(--ghost-accent-color-dark-mode);
-}
-
 html.dark-mode hr {
     border: 1px solid var(--ghost-accent-color-dark-mode);
 }
@@ -421,7 +438,6 @@ html.dark-mode hr {
     padding: 4vmin;
 
     border-bottom: 1px solid hsla(0, 0%, 100%, .1);
-    background: #0a0b0c;
 }
 
 /* Top header sticky */
@@ -459,15 +475,15 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
 
 /* Blockquote and small blockquote */
 
-.has-sans-body .gh-content>blockquote {
+.has-sans-body .gh-content > blockquote {
     font-family: var(--font-mono);
 }
 
-.gh-content>blockquote::before {
+.gh-content > blockquote::before {
     display: none;
 }
 
-.gh-content>blockquote.small {
+.gh-content > blockquote.small {
     font-family: var(--font-serif);
     font-size: 1.8rem;
     font-weight: bold;
@@ -476,6 +492,16 @@ html.dark-mode progress.reading-progress-bar[value]::-webkit-progress-bar {
     margin-top: 3vmin !important;
 }
 
-.gh-content>blockquote.small::before {
+.gh-content > blockquote.small::before {
     display: inherit;
+}
+
+.post-card-image {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--ghost-accent-color);
+}
+
+html.dark-mode .post-card-image {
+    border-color: var(--ghost-accent-color-dark-mode);
 }
