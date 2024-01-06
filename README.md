@@ -54,6 +54,10 @@ Listed below are the changes from the original Casper theme. Changes are made in
     * Set up a GitHub action to automatically deploy the theme to your blog in a seamless CI/CD manner. More information can be found [here](https://github.com/marketplace/actions/deploy-ghost-theme).
 5. If you want to make use of the custom routes, make sure to modify [this file](extras/routes.yaml) and upload it to Ghost under `Settings -> Labs` in your admin console.
 
+## Testing locally
+
+Follow this [tutorial](https://ghost.org/tutorials/local-ghost/) to install a local Ghost instance.
+
 ## Gratitude
 
 Click [here](THANKS.md) for a list of references.
