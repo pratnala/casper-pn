@@ -1,6 +1,6 @@
 # casper-pn-5
 
-This repository is the testing ground for upgrading [casper-pn](https://github.com/pratnala/casper-pn) to v5 of Casper.
+This repository comprises the theme files for [my blog](https://blog.pratyushnalam.com) powered by [Ghost](https://ghost.org).
 
 It is an extension of the default theme, [Casper](https://github.com/TryGhost/Casper).
 
