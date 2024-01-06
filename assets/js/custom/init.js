@@ -30,6 +30,13 @@ var lightPalette = {
         document.documentElement.classList.add('dark-mode');
         localStorage.setItem('theme', 'dark');
         palette = darkPalette;
+        setTimeout(function () {
+            var tweets = document.querySelectorAll('[data-tweet-id]');
+            tweets.forEach(function (tweet) {
+                var src = tweet.getAttribute('src');
+                tweet.setAttribute('src', src.replace('theme=light', 'theme=dark'));
+            });
+        }, 1000);
     }
 
     var theme = localStorage.getItem('theme');

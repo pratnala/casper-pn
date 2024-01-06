@@ -8,12 +8,24 @@
         if (window.hyvor_talk) {
             window.hyvor_talk.setPalette(darkPalette);
         }
+        setTimeout (function() {
+            var tweets = document.querySelectorAll('[data-tweet-id]');
+            tweets.forEach(function(tweet) {
+                var src = tweet.getAttribute('src');
+                tweet.setAttribute('src', src.replace('theme=light', 'theme=dark'));
+            });
+        }, 1000);
     } else {
         document.documentElement.setAttribute('color-mode', 'light');
         document.documentElement.classList.remove('dark-mode');
         if (window.hyvor_talk) {
             window.hyvor_talk.setPalette(lightPalette);
         }
+        var tweets = document.querySelectorAll('[data-tweet-id]');
+        tweets.forEach(function (tweet) {
+            var src = tweet.getAttribute('src');
+            tweet.setAttribute('src', src.replace('theme=dark', 'theme=light'));
+        });
     }
 })();
 
@@ -25,6 +37,11 @@ var toggleColorMode = function toggleColorMode(e) {
         if (window.hyvor_talk) {
             window.hyvor_talk.setPalette(lightPalette);
         }
+        var tweets = document.querySelectorAll('[data-tweet-id]');
+        tweets.forEach(function (tweet) {
+            var src = tweet.getAttribute('src');
+            tweet.setAttribute('src', src.replace('theme=dark', 'theme=light'));
+        });
     } else {
         document.documentElement.setAttribute('color-mode', 'dark');
         document.documentElement.classList.add('dark-mode');
@@ -32,6 +49,11 @@ var toggleColorMode = function toggleColorMode(e) {
         if (window.hyvor_talk) {
             window.hyvor_talk.setPalette(darkPalette);
         }
+        var tweets = document.querySelectorAll('[data-tweet-id]');
+        tweets.forEach(function (tweet) {
+            var src = tweet.getAttribute('src');
+            tweet.setAttribute('src', src.replace('theme=light', 'theme=dark'));
+        });
     }
 };
 
