@@ -56,7 +56,7 @@ Listed below are the changes from the original Casper theme. Changes are made in
 
 ## Testing locally
 
-Follow this [tutorial](https://ghost.org/tutorials/local-ghost/) to install a local Ghost instance.
+Follow this [tutorial](https://ghost.org/tutorials/local-ghost/) to install a local Ghost instance. This [doc](https://ghost.org/docs/install/local/#developing-themes) is also helpful.
 
 ## Gratitude
 
