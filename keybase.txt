@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/pratnala
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://blog.pratyushnalam.com
+  * I am pratnala (https://keybase.io/pratnala) on keybase.
+  * I have a public key with fingerprint 3BD7 07E1 9EA1 259A A032  5764 7A47 F3B1 3C7C 115A
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120542d7c1ea26d208fe6f5eba00d5353119a1efc3f810f4daaafbff77a05e187c80a",
+      "fingerprint": "3bd707e19ea1259aa03257647a47f3b13c7c115a",
+      "host": "keybase.io",
+      "key_id": "7a47f3b13c7c115a",
+      "kid": "010113e84a72d696689cde99aca8192a73e604f8ba8ed9b696dd3f16c67a15f206090a",
+      "uid": "df8200f68f9be57b0839414de4553119",
+      "username": "pratnala"
+    },
+    "service": {
+      "hostname": "blog.pratyushnalam.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1710064642,
+  "expire_in": 157680000,
+  "prev": "13f998a156fdc007bd6d23d300bea8153d6eb2f1fd5a8ea6c2b49e0c86e5dc00",
+  "seqno": 71,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yML0AnicbZJtbBRFHMavLzR6VCqkppi+waYfMDaXmX3fA1KtlcZEW0yKkJpwmd2Z
+vdv0unvd3V5pKxS1iS3EVCg1LQlIC21IBSIYmlrCVQghIKZoJeALoj0gIheoYNX6
+UnG2gW/Ol81Mfs8zz//ZOfNEhs+f1lL569FVbyyuTbtwaqDRR+60p7cyqoWbmWAr
+U0fmPySKieOG6gzMBBkAWSDwLJY0SBArYhbIOhF1gagIACxwAgehgiDRNU6XIdB5
+jBDSVV2XJAQEAmVJkwFiShndMMPEjtmG6VJbTsUSkAhUCIKsoCAEOFaQRF5CvKRz
+KuQ0eiEUPGHEcjwFDacihwQMi57RTWg+3v/wj3IDCDki80hisaiIoqxomCgK0pAM
+FRZJHBEBr8sqkglWVEpgzOlQ1EQJQUFngQiU+dyN83ZYl1kAdFHWFZUIkgpkTuEh
+jwkvzDfggQ6xTVRPKB2zkWuiKGI2lzL0NG5oxCvWm+QhoUatcMDDmhudiIfWBzSr
+nrrEbMu1NCtKmYjrxpyg5+E2xzxRE1FDD+1CqmFi2ihVxIntGJbJBCElNdfw/KEE
+ARB5kWdLGbIpZtgkZHgErVgGdHn3kDi1hJyuKDKdWNSxBoCkYvqLOcwBoBJalMBh
+kaisDnUs0KKQqLEqrxCgySIRPAHjDdhgWkxQgjQnClNPxwibyG20CbP59KdXM31p
+fl/WgnTvqfn8jz/56AEOfZ7tO7TbVz0euHykaCL/h4WR2e69Xzj7t8X8SztfCQ72
+Fr4w9Fpoz/jPYwUDXSPXpmNLwcZjVzYsb/hw6l5H78RodcelyjKlqiH8y4G5+KZF
+5dfYdrmivaoOfnz9xqU9I22TG9akDvefSzWtqhpCd5c9KLy1z30nb9GBtedPhpT0
+dYUlbRf4t1+t+PpEd0FP/9rpsz2vJ7+dXD92L7E/uV0dLvv7MrNy6svgU3uHb9ZN
+FLT9/ueZHSXLitNmMnft2pjasuSOltfvjlyNzPi/k9+7f/wjs2t5580Pljx9O8tf
+nDu+9Z+Kqd6LtWtmKvu2mQejo6dvJY+c2j6aP1u0dX3u9YRTI/3027N9eYXS4EDG
+Tvn72w+Sb3L/Zr1Ye7gYZR9NPNeU+KocLUyUD4+KY6lDi78ZTK24m/PXxcdmc95P
+Jbt/7Ny50m6t9eVUKqvn5jJXn2hpvdHRdeWtmvNb7vctWHf2E7slN+P5Mub4HwdP
+zuzOjk+93Fkz/dK+yc9Khnryi6rC1ef6jq0I5O94t/mZ/wB9Z4v2
+=Ud9w
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pratnala
+
+==================================================================
