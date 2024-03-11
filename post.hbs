@@ -108,17 +108,8 @@ into the {body} tag of the default.hbs template --}}
         </section>
 
         <section class="article-comments gh-canvas">
-            <div id="hyvor-talk-view"></div>
-            <script type="text/javascript">
-                var HYVOR_TALK_WEBSITE = 4394;
-                var HYVOR_TALK_CONFIG = {
-                    url: false,
-                    id: "{{comment_id}}",
-                    palette: palette,
-                    loadMode: 'scroll'
-                };
-            </script>
-            <script type="text/javascript" src="//talk.hyvor.com/web-api/embed.js"></script>
+            <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
+            <hyvor-talk-comments website-id="4394" page-id="{{ comment_id }}"></hyvor-talk-comments>
         </section>
 
     </article>
