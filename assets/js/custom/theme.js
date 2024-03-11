@@ -5,9 +5,6 @@
     if (theme === 'dark') {
         document.documentElement.setAttribute('color-mode', 'dark');
         document.documentElement.classList.add('dark-mode');
-        if (window.hyvor_talk) {
-            window.hyvor_talk.setPalette(darkPalette);
-        }
         setTimeout (function() {
             var tweets = document.querySelectorAll('[data-tweet-id]');
             tweets.forEach(function(tweet) {
@@ -18,9 +15,6 @@
     } else {
         document.documentElement.setAttribute('color-mode', 'light');
         document.documentElement.classList.remove('dark-mode');
-        if (window.hyvor_talk) {
-            window.hyvor_talk.setPalette(lightPalette);
-        }
         var tweets = document.querySelectorAll('[data-tweet-id]');
         tweets.forEach(function (tweet) {
             var src = tweet.getAttribute('src');
@@ -34,9 +28,6 @@ var toggleColorMode = function toggleColorMode(e) {
         document.documentElement.setAttribute('color-mode', 'light');
         document.documentElement.classList.remove('dark-mode');
         localStorage.setItem('theme', 'light');
-        if (window.hyvor_talk) {
-            window.hyvor_talk.setPalette(lightPalette);
-        }
         var tweets = document.querySelectorAll('[data-tweet-id]');
         tweets.forEach(function (tweet) {
             var src = tweet.getAttribute('src');
@@ -46,9 +37,6 @@ var toggleColorMode = function toggleColorMode(e) {
         document.documentElement.setAttribute('color-mode', 'dark');
         document.documentElement.classList.add('dark-mode');
         localStorage.setItem('theme', 'dark');
-        if (window.hyvor_talk) {
-            window.hyvor_talk.setPalette(darkPalette);
-        }
         var tweets = document.querySelectorAll('[data-tweet-id]');
         tweets.forEach(function (tweet) {
             var src = tweet.getAttribute('src');
