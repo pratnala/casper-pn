@@ -5,16 +5,16 @@
     if (theme === 'dark') {
         document.documentElement.setAttribute('color-mode', 'dark');
         document.documentElement.classList.add('dark-mode');
-        setTimeout (function() {
-            var tweets = document.querySelectorAll('[data-tweet-id]');
-            tweets.forEach(function(tweet) {
-                var src = tweet.getAttribute('src');
-                tweet.setAttribute('src', src.replace('theme=light', 'theme=dark'));
-            });
-        }, 1000);
+        document.querySelector('hyvor-talk-comments').setAttribute('colors', 'dark');
+        var tweets = document.querySelectorAll('[data-tweet-id]');
+        tweets.forEach(function(tweet) {
+            var src = tweet.getAttribute('src');
+            tweet.setAttribute('src', src.replace('theme=light', 'theme=dark'));
+        });
     } else {
         document.documentElement.setAttribute('color-mode', 'light');
         document.documentElement.classList.remove('dark-mode');
+        document.querySelector('hyvor-talk-comments').setAttribute('colors', 'light');
         var tweets = document.querySelectorAll('[data-tweet-id]');
         tweets.forEach(function (tweet) {
             var src = tweet.getAttribute('src');
@@ -28,6 +28,7 @@ var toggleColorMode = function toggleColorMode(e) {
         document.documentElement.setAttribute('color-mode', 'light');
         document.documentElement.classList.remove('dark-mode');
         localStorage.setItem('theme', 'light');
+        document.querySelector('hyvor-talk-comments').setAttribute('colors', 'light');
         var tweets = document.querySelectorAll('[data-tweet-id]');
         tweets.forEach(function (tweet) {
             var src = tweet.getAttribute('src');
@@ -37,6 +38,7 @@ var toggleColorMode = function toggleColorMode(e) {
         document.documentElement.setAttribute('color-mode', 'dark');
         document.documentElement.classList.add('dark-mode');
         localStorage.setItem('theme', 'dark');
+        document.querySelector('hyvor-talk-comments').setAttribute('colors', 'dark');
         var tweets = document.querySelectorAll('[data-tweet-id]');
         tweets.forEach(function (tweet) {
             var src = tweet.getAttribute('src');
